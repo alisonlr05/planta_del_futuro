@@ -1,0 +1,19 @@
+# Configuración del paquete "planta".
+# Permite instalar el código de src/ con:  pip install -e .
+# Así los notebooks y las pruebas pueden hacer:  from planta.config import ...
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "planta"
+version = "0.1.0"
+description = "Monitoreo predictivo de una línea de producción (Planta del Futuro)"
+requires-python = ">=3.12"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

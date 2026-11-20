@@ -1,0 +1,24 @@
+# Dependencias del proyecto Planta del Futuro (Python 3.14)
+# Instalar con: pip install -r requirements.txt
+
+# --- Datos y cálculo ---
+pandas>=2.3
+numpy>=2.3
+
+# --- Machine learning ---
+scikit-learn>=1.7
+
+# --- Gráficos ---
+matplotlib>=3.10
+
+# --- Descarga del dataset AI4I 2020 desde UCI ---
+ucimlrepo>=0.0.7
+
+# --- Notebooks ---
+jupyter>=1.1
+
+# --- Pruebas ---
+pytest>=8.4
+
+# --- Código del proyecto (src/planta), instalado en modo editable ---
+-e .

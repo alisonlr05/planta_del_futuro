@@ -1,0 +1,37 @@
+# --- Instrucciones locales para el asistente (solo en mi computadora) ---
+CLAUDE.md
+.claude/
+
+# --- Entorno virtual de Python ---
+.venv/
+venv/
+
+# --- Archivos generados por Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- Datos ---
+# El dataset original se descarga con ucimlrepo; no se sube.
+data/raw/*
+!data/raw/.gitkeep
+
+# --- Secretos y credenciales ---
+.env
+.env.*
+*.key
+*credentials*.json
+n8n/.n8n/
+
+# --- Power BI: archivos temporales y de respaldo ---
+powerbi/*.pbix.bak
+~$*
+
+# --- Sistema operativo y editores ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
