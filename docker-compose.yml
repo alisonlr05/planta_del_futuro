@@ -1,0 +1,26 @@
+# n8n para las alertas de la Planta del Futuro.
+# Iniciar:  docker compose up -d      ·  Abrir: http://localhost:5678
+# Detener:  docker compose down
+# Los datos privados (correo destino) van en el archivo .env (no se sube a Git).
+
+services:
+  n8n:
+    image: docker.n8n.io/n8nio/n8n:2.46.7  # versión fija para que funcione igual siempre
+    container_name: planta-n8n
+    restart: unless-stopped
+    ports:
+      - "5678:5678"
+    env_file:
+      - .env  # CORREO_REMITENTE, CORREO_DESTINO, LIMITE_CORREOS_DEMO, ZONA_HORARIA
+    environment:
+      GENERIC_TIMEZONE: ${ZONA_HORARIA}  # hora del nodo "Cada minuto"
+      TZ: ${ZONA_HORARIA}
+      N8N_RESTRICT_FILE_ACCESS_TO: /data  # n8n solo puede leer la carpeta data del proyecto
+      N8N_BLOCK_ENV_ACCESS_IN_NODE: "false"  # permite usar $env (correos y límite) en el flujo
+      N8N_DIAGNOSTICS_ENABLED: "false"  # no enviar estadísticas de uso
+    volumes:
+      - n8n_datos:/home/node/.n8n  # cuenta, credenciales y flujos de n8n (fuera de Git)
+      - ./data:/data  # carpeta data/ del proyecto -> /data dentro del contenedor
+
+volumes:
+  n8n_datos:

@@ -1,0 +1,103 @@
+{
+  "name": "Planta del Futuro · Alertas por turno (Gmail)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutesInterval": 1
+            }
+          ]
+        }
+      },
+      "id": "5b1f0a52-6a3e-4c55-9d1e-0c7a0b9f2a01",
+      "name": "Cada minuto",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [0, 0]
+    },
+    {
+      "parameters": {
+        "fileSelector": "/data/processed/alertas_por_turno.csv",
+        "options": {}
+      },
+      "id": "5b1f0a52-6a3e-4c55-9d1e-0c7a0b9f2a02",
+      "name": "Leer CSV de alertas",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1,
+      "position": [220, 0]
+    },
+    {
+      "parameters": {
+        "operation": "csv",
+        "options": {}
+      },
+      "id": "5b1f0a52-6a3e-4c55-9d1e-0c7a0b9f2a03",
+      "name": "Extraer filas",
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1,
+      "position": [440, 0]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Recuerda entre ejecuciones qué turnos ya se enviaron.\n// (La memoria se guarda solo cuando el flujo está ACTIVO, no en pruebas manuales.)\nconst estado = $getWorkflowStaticData('global');\nconst enviados = new Set(estado.enviados ?? []);\n\n// Límite de correos de la demostración (LIMITE_CORREOS_DEMO en .env).\n// 5 por defecto; 0 = sin límite (se envían todos los turnos).\nconst valor = parseInt($env.LIMITE_CORREOS_DEMO ?? '5', 10);\nconst limite = Number.isNaN(valor) ? 5 : valor;\nif (limite > 0 && enviados.size >= limite) {\n  return [];\n}\n\n// El CSV ya viene ordenado por fecha y turno: tomamos el primero que no se haya enviado.\nconst siguiente = $input.all().find((item) => !enviados.has(item.json.id_envio));\n\n// Si ya se enviaron todos, el flujo termina aquí sin mandar correo.\nreturn siguiente ? [siguiente] : [];"
+      },
+      "id": "5b1f0a52-6a3e-4c55-9d1e-0c7a0b9f2a04",
+      "name": "Elegir siguiente turno",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [660, 0]
+    },
+    {
+      "parameters": {
+        "fromEmail": "={{ $env.CORREO_REMITENTE }}",
+        "toEmail": "={{ $env.CORREO_DESTINO }}",
+        "subject": "={{ $json.asunto }}",
+        "emailFormat": "html",
+        "html": "={{ $json.cuerpo_html }}",
+        "options": {
+          "appendAttribution": false
+        }
+      },
+      "id": "5b1f0a52-6a3e-4c55-9d1e-0c7a0b9f2a05",
+      "name": "Enviar correo (Gmail)",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [880, 0]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Solo se llega aquí si el correo se envió bien: se anota el turno como enviado.\n// Si el envío falla, no se anota y se reintenta en el siguiente minuto.\nconst estado = $getWorkflowStaticData('global');\nestado.enviados = estado.enviados ?? [];\nconst idEnvio = $('Elegir siguiente turno').first().json.id_envio;\nestado.enviados.push(idEnvio);\nreturn [{ json: { id_envio: idEnvio, correos_enviados: estado.enviados.length } }];"
+      },
+      "id": "5b1f0a52-6a3e-4c55-9d1e-0c7a0b9f2a06",
+      "name": "Registrar envío",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1100, 0]
+    }
+  ],
+  "connections": {
+    "Cada minuto": {
+      "main": [[{ "node": "Leer CSV de alertas", "type": "main", "index": 0 }]]
+    },
+    "Leer CSV de alertas": {
+      "main": [[{ "node": "Extraer filas", "type": "main", "index": 0 }]]
+    },
+    "Extraer filas": {
+      "main": [[{ "node": "Elegir siguiente turno", "type": "main", "index": 0 }]]
+    },
+    "Elegir siguiente turno": {
+      "main": [[{ "node": "Enviar correo (Gmail)", "type": "main", "index": 0 }]]
+    },
+    "Enviar correo (Gmail)": {
+      "main": [[{ "node": "Registrar envío", "type": "main", "index": 0 }]]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {}
+}

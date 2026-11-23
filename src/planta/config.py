@@ -18,6 +18,7 @@ RUTA_DATASET_CRUDO: Path = DIR_DATOS_CRUDOS / "ai4i2020.csv"
 RUTA_CSV_PRODUCCION: Path = DIR_DATOS_PROCESADOS / "produccion_planta.csv"
 RUTA_CSV_OEE: Path = DIR_DATOS_PROCESADOS / "oee_turnos.csv"
 RUTA_CSV_PREDICCIONES: Path = DIR_DATOS_PROCESADOS / "predicciones_fallas.csv"
+RUTA_CSV_ALERTAS: Path = DIR_DATOS_PROCESADOS / "alertas_por_turno.csv"
 
 # --- Dataset -----------------------------------------------------------------
 ID_DATASET_UCI: int = 601  # AI4I 2020 Predictive Maintenance Dataset
@@ -54,6 +55,18 @@ PROPORCION_PRUEBA: float = 0.2  # 20 % de los ciclos se reserva para evaluar el 
 # Niveles de riesgo según la probabilidad de falla que da el modelo.
 UMBRAL_RIESGO_MEDIO: float = 0.30  # desde 30 % -> "Medio"
 UMBRAL_RIESGO_ALTO: float = 0.60  # desde 60 % -> "Alto" (n8n enviará alerta)
+
+# --- Alertas (n8n envía un correo por turno con alertas) ---------------------
+NIVEL_RIESGO_ALERTA: str = "Alto"  # solo los ciclos con este nivel generan alerta
+
+# Señales para explicar la causa probable de una alerta.
+# Límites tomados de la documentación del dataset AI4I 2020.
+DIFERENCIA_TEMPERATURA_MINIMA_C: float = 8.6  # menos que esto: el calor no se disipa...
+VELOCIDAD_MINIMA_DISIPACION_RPM: int = 1380  # ...si además la velocidad es baja
+POTENCIA_MINIMA_W: int = 3500
+POTENCIA_MAXIMA_W: int = 9000
+LIMITE_ESFUERZO_NM_MIN: dict[str, int] = {"L": 11000, "M": 12000, "H": 13000}  # por tipo de producto
+DESGASTE_CAMBIO_HERRAMIENTA_MIN: int = 200  # desde aquí conviene cambiar la herramienta
 
 # --- Conversión de unidades --------------------------------------------------
 KELVIN_A_CELSIUS: float = 273.15
