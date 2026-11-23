@@ -16,6 +16,8 @@ DIR_DATOS_PROCESADOS: Path = DIR_DATOS / "processed"
 
 RUTA_DATASET_CRUDO: Path = DIR_DATOS_CRUDOS / "ai4i2020.csv"
 RUTA_CSV_PRODUCCION: Path = DIR_DATOS_PROCESADOS / "produccion_planta.csv"
+RUTA_CSV_OEE: Path = DIR_DATOS_PROCESADOS / "oee_turnos.csv"
+RUTA_CSV_PREDICCIONES: Path = DIR_DATOS_PROCESADOS / "predicciones_fallas.csv"
 
 # --- Dataset -----------------------------------------------------------------
 ID_DATASET_UCI: int = 601  # AI4I 2020 Predictive Maintenance Dataset
@@ -36,6 +38,22 @@ TURNOS: dict[str, tuple[int, int]] = {
     "Tarde": (14, 22),
     "Noche": (22, 6),
 }
+
+# Hora en que empieza la jornada: los ciclos antes de esta hora (00:00-05:59)
+# pertenecen al turno Noche del día anterior.
+HORA_INICIO_JORNADA: int = 6
+
+# --- OEE (supuestos: el dataset no trae tiempos de paro) --------------------
+MINUTOS_REPARACION_FALLA: int = 20  # paro por cada ciclo con falla de máquina
+MINUTOS_CAMBIO_HERRAMIENTA: int = 5  # paro por cada cambio de herramienta
+VELOCIDAD_NOMINAL_RPM: int = 1500  # velocidad ideal (≈ mediana real del dataset)
+
+# --- Modelo de predicción de fallas ------------------------------------------
+PROPORCION_PRUEBA: float = 0.2  # 20 % de los ciclos se reserva para evaluar el modelo
+
+# Niveles de riesgo según la probabilidad de falla que da el modelo.
+UMBRAL_RIESGO_MEDIO: float = 0.30  # desde 30 % -> "Medio"
+UMBRAL_RIESGO_ALTO: float = 0.60  # desde 60 % -> "Alto" (n8n enviará alerta)
 
 # --- Conversión de unidades --------------------------------------------------
 KELVIN_A_CELSIUS: float = 273.15
