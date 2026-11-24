@@ -70,17 +70,50 @@ def describir_causa_probable(ciclo: pd.Series) -> tuple[str, str]:
 
 
 # --- Tabla de alertas (un ciclo por fila) -------------------------------------
+COLUMNAS_ALERTA: list[str] = [
+    "id_registro", "id_maquina", "fecha_hora", "fecha_turno", "turno", "probabilidad_falla",
+]
+
+
+def preparar_ciclos_en_riesgo(produccion: pd.DataFrame, predicciones: pd.DataFrame) -> pd.DataFrame:
+    """Ciclos en riesgo Alto con sus mediciones, variables derivadas y jornada."""
+    en_riesgo = predicciones[predicciones["nivel_riesgo"] == NIVEL_RIESGO_ALERTA]
+    ciclos = en_riesgo.merge(produccion[COLUMNAS_MEDICIONES], on="id_registro", how="left")
+    ciclos = asignar_fecha_turno(agregar_variables_derivadas(ciclos))
+    ciclos["fecha_hora"] = pd.to_datetime(ciclos["fecha_hora"])
+    return ciclos.sort_values("fecha_hora").reset_index(drop=True)
+
+
 def preparar_alertas(produccion: pd.DataFrame, predicciones: pd.DataFrame) -> pd.DataFrame:
     """Ciclos en riesgo Alto con su jornada, señal y acción sugerida."""
-    en_riesgo = predicciones[predicciones["nivel_riesgo"] == NIVEL_RIESGO_ALERTA]
-    alertas = en_riesgo.merge(produccion[COLUMNAS_MEDICIONES], on="id_registro", how="left")
-    alertas = asignar_fecha_turno(agregar_variables_derivadas(alertas))
-    alertas["fecha_hora"] = pd.to_datetime(alertas["fecha_hora"])
+    alertas = preparar_ciclos_en_riesgo(produccion, predicciones)
     causas = alertas.apply(describir_causa_probable, axis=1, result_type="expand")
     alertas["senal"], alertas["accion_sugerida"] = causas[0], causas[1]
-    columnas = ["id_registro", "id_maquina", "fecha_hora", "fecha_turno", "turno",
-                "probabilidad_falla", "senal", "accion_sugerida"]
-    return alertas[columnas].sort_values("fecha_hora").reset_index(drop=True)
+    return alertas[COLUMNAS_ALERTA + ["senal", "accion_sugerida"]]
+
+
+# --- Detalle para Power BI (una señal por fila) ---------------------------------
+def extraer_tipo_senal(senal: str) -> str:
+    """Quita el valor medido para poder agrupar: 'Potencia baja (3 410 W)' -> 'Potencia baja'."""
+    return senal.split(" (")[0]
+
+
+def desglosar_senales(ciclos_en_riesgo: pd.DataFrame) -> pd.DataFrame:
+    """Una fila por cada señal de cada alerta, con su acción sugerida.
+
+    Una alerta con dos señales ocupa dos filas; por eso en Power BI las alertas
+    (en total o por acción) se cuentan con DISTINCTCOUNT(id_registro).
+    """
+    filas = []
+    for _, ciclo in ciclos_en_riesgo.iterrows():
+        for senal, accion in detectar_senales(ciclo) or [SIN_SENAL_CLARA]:
+            filas.append({
+                **ciclo[COLUMNAS_ALERTA].to_dict(),
+                "tipo_senal": extraer_tipo_senal(senal),
+                "senal": senal,
+                "accion_sugerida": accion,
+            })
+    return pd.DataFrame(filas)
 
 
 # --- Correo por turno -----------------------------------------------------------

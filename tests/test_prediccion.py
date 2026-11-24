@@ -108,6 +108,14 @@ def test_tabla_de_predicciones_tiene_el_contrato_de_datos() -> None:
     tabla = construir_tabla_predicciones(datos, np.array([0.1, 0.45, 0.9]))
     assert list(tabla.columns) == [
         "id_registro", "id_maquina", "fecha_hora", "turno", "tipo_producto",
-        "probabilidad_falla", "nivel_riesgo", "falla_real",
+        "probabilidad_falla", "nivel_riesgo", "falla_real", "fecha_turno",
     ]
     assert tabla["nivel_riesgo"].tolist() == ["Bajo", "Medio", "Alto"]
+
+
+def test_tabla_de_predicciones_asigna_la_jornada_del_turno_noche() -> None:
+    datos = crear_ciclos_sinteticos(cantidad=2)
+    datos["fecha_hora"] = ["2026-09-02T03:30:00", "2026-09-02T06:00:00"]
+    tabla = construir_tabla_predicciones(datos, np.array([0.1, 0.2]))
+    # 03:30 pertenece al turno Noche del día anterior; 06:00 ya es la nueva jornada.
+    assert tabla["fecha_turno"].tolist() == [pd.Timestamp("2026-09-01"), pd.Timestamp("2026-09-02")]

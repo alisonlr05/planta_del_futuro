@@ -28,6 +28,7 @@ from planta.config import (
     UMBRAL_RIESGO_MEDIO,
 )
 from planta.features.variables import COLUMNAS_DERIVADAS, agregar_variables_derivadas
+from planta.kpis.oee import asignar_fecha_turno
 
 COLUMNA_OBJETIVO: str = "falla_maquina"
 VARIABLES_NUMERICAS: list[str] = [
@@ -161,9 +162,13 @@ def predecir_fuera_de_muestra(
 
 
 def construir_tabla_predicciones(datos: pd.DataFrame, probabilidades: np.ndarray) -> pd.DataFrame:
-    """Tabla que leen n8n y Power BI: un ciclo por fila con su probabilidad y riesgo."""
+    """Tabla que leen n8n y Power BI: un ciclo por fila con su probabilidad y riesgo.
+
+    La última columna, fecha_turno (fecha de la jornada), conecta la tabla con el
+    calendario de Power BI igual que el OEE (de 00:00 a 05:59 cuenta como el día anterior).
+    """
     tabla = datos[["id_registro", "id_maquina", "fecha_hora", "turno", "tipo_producto"]].copy()
     tabla["probabilidad_falla"] = np.round(probabilidades, 4)
     tabla["nivel_riesgo"] = clasificar_riesgo(probabilidades).to_numpy()
     tabla["falla_real"] = datos[COLUMNA_OBJETIVO].to_numpy()
-    return tabla
+    return asignar_fecha_turno(tabla)

@@ -2,6 +2,10 @@
 CLAUDE.md
 .claude/
 
+# --- Guías de trabajo personales (solo en mi computadora) ---
+n8n/README.md
+powerbi/README.md
+
 # --- Entorno virtual de Python ---
 .venv/
 venv/

@@ -20,6 +20,12 @@ RUTA_CSV_OEE: Path = DIR_DATOS_PROCESADOS / "oee_turnos.csv"
 RUTA_CSV_PREDICCIONES: Path = DIR_DATOS_PROCESADOS / "predicciones_fallas.csv"
 RUTA_CSV_ALERTAS: Path = DIR_DATOS_PROCESADOS / "alertas_por_turno.csv"
 
+# Tablas extra para el modelo estrella de Power BI.
+RUTA_CSV_ALERTAS_DETALLE: Path = DIR_DATOS_PROCESADOS / "alertas_detalle.csv"
+RUTA_CSV_DIM_MAQUINAS: Path = DIR_DATOS_PROCESADOS / "dim_maquinas.csv"
+RUTA_CSV_DIM_TURNOS: Path = DIR_DATOS_PROCESADOS / "dim_turnos.csv"
+RUTA_CSV_DIM_FECHAS: Path = DIR_DATOS_PROCESADOS / "dim_fechas.csv"
+
 # --- Dataset -----------------------------------------------------------------
 ID_DATASET_UCI: int = 601  # AI4I 2020 Predictive Maintenance Dataset
 

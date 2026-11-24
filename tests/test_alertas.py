@@ -9,10 +9,13 @@ from planta.models.alertas import (
     agrupar_alertas_por_turno,
     construir_asunto,
     construir_cuerpo_html,
+    desglosar_senales,
     describir_causa_probable,
     detectar_senales,
+    extraer_tipo_senal,
     formatear_miles,
     preparar_alertas,
+    preparar_ciclos_en_riesgo,
 )
 
 # Un ciclo "normal": diferencia 11 °C, potencia ≈ 6 283 W, esfuerzo 2 000 Nm·min.
@@ -141,3 +144,34 @@ def test_agrupar_da_un_correo_por_turno_en_orden_cronologico() -> None:
     assert por_turno["cantidad_alertas"].tolist() == [1, 2]
     assert por_turno.loc[1, "maquinas"] == "M01, M03"
     assert por_turno["id_envio"].is_unique
+
+
+# --- Detalle para Power BI (una señal por fila) ---------------------------------------
+def test_extraer_tipo_senal_quita_el_valor_medido() -> None:
+    assert extraer_tipo_senal("Potencia baja (3 410 W)") == "Potencia baja"
+    assert extraer_tipo_senal(SIN_SENAL_CLARA[0]) == SIN_SENAL_CLARA[0]
+
+
+def test_desglosar_da_una_fila_por_senal_sin_perder_alertas() -> None:
+    produccion, predicciones = crear_entradas()
+    # El ciclo 1 tendrá dos señales: potencia alta y herramienta desgastada.
+    produccion.loc[produccion["id_registro"] == 1, ["velocidad_rotacion_rpm", "desgaste_herramienta_min"]] = [2500, 210]
+    detalle = desglosar_senales(preparar_ciclos_en_riesgo(produccion, predicciones))
+
+    assert len(detalle) == 4  # 3 alertas, una de ellas con 2 señales
+    assert detalle["id_registro"].nunique() == 3  # contar alertas = DISTINCTCOUNT(id_registro)
+    senales_ciclo_1 = detalle.loc[detalle["id_registro"] == 1, "tipo_senal"].tolist()
+    assert senales_ciclo_1 == ["Potencia alta", "Herramienta desgastada"]
+
+
+def test_desglosar_sin_senal_clara_sugiere_inspeccion() -> None:
+    detalle = desglosar_senales(preparar_ciclos_en_riesgo(*crear_entradas()))
+    assert (detalle["tipo_senal"] == SIN_SENAL_CLARA[0]).all()  # ciclos normales
+    assert (detalle["accion_sugerida"] == SIN_SENAL_CLARA[1]).all()
+
+
+def test_desglosar_coincide_con_preparar_alertas() -> None:
+    entradas = crear_entradas()
+    alertas = preparar_alertas(*entradas)
+    detalle = desglosar_senales(preparar_ciclos_en_riesgo(*entradas))
+    assert set(detalle["id_registro"]) == set(alertas["id_registro"])

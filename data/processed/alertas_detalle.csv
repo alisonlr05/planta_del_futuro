@@ -1,0 +1,378 @@
+id_registro,id_maquina,fecha_hora,fecha_turno,turno,probabilidad_falla,tipo_senal,senal,accion_sugerida
+4049,M03,2026-09-01T12:30:00,2026-09-01T00:00:00,Mañana,0.98,Potencia baja,Potencia baja (3 410 W),Revisar parámetros de corte
+2016,M02,2026-09-01T15:00:00,2026-09-01T00:00:00,Tarde,0.9233,Potencia alta,Potencia alta (9 033 W),Revisar parámetros de corte
+6025,M04,2026-09-01T18:00:00,2026-09-01T00:00:00,Tarde,0.8867,Potencia alta,Potencia alta (9 273 W),Revisar parámetros de corte
+4072,M03,2026-09-02T00:00:00,2026-09-01T00:00:00,Noche,0.8533,Potencia alta,Potencia alta (9 562 W),Revisar parámetros de corte
+4079,M03,2026-09-02T03:30:00,2026-09-01T00:00:00,Noche,0.74,Combinación de variables fuera de lo normal,Combinación de variables fuera de lo normal,Inspección general de la máquina
+4081,M03,2026-09-02T04:30:00,2026-09-01T00:00:00,Noche,0.9667,Diferencia de temperatura baja,Diferencia de temperatura baja (8.4 °C),Revisar refrigeración/ventilación
+4082,M03,2026-09-02T05:00:00,2026-09-01T00:00:00,Noche,0.98,Diferencia de temperatura baja,Diferencia de temperatura baja (8.4 °C),Revisar refrigeración/ventilación
+51,M01,2026-09-02T07:00:00,2026-09-02T00:00:00,Mañana,1.0,Potencia baja,Potencia baja (1 378 W),Revisar parámetros de corte
+4088,M03,2026-09-02T08:00:00,2026-09-02T00:00:00,Mañana,0.9467,Diferencia de temperatura baja,Diferencia de temperatura baja (8.5 °C),Revisar refrigeración/ventilación
+4097,M03,2026-09-02T12:30:00,2026-09-02T00:00:00,Mañana,0.9433,Diferencia de temperatura baja,Diferencia de temperatura baja (8.5 °C),Revisar refrigeración/ventilación
+70,M01,2026-09-02T16:30:00,2026-09-02T00:00:00,Tarde,0.9733,Potencia alta,Potencia alta (9 701 W),Revisar parámetros de corte
+70,M01,2026-09-02T16:30:00,2026-09-02T00:00:00,Tarde,0.9733,Sobreesfuerzo,Sobreesfuerzo (12 549 Nm·min),Reducir carga o cambiar herramienta
+4111,M03,2026-09-02T19:30:00,2026-09-02T00:00:00,Tarde,0.8033,Combinación de variables fuera de lo normal,Combinación de variables fuera de lo normal,Inspección general de la máquina
+6079,M04,2026-09-02T21:00:00,2026-09-02T00:00:00,Tarde,0.99,Sobreesfuerzo,Sobreesfuerzo (11 997 Nm·min),Reducir carga o cambiar herramienta
+6079,M04,2026-09-02T21:00:00,2026-09-02T00:00:00,Tarde,0.99,Herramienta desgastada,Herramienta desgastada (203 min),Cambiar herramienta
+2076,M02,2026-09-02T21:00:00,2026-09-02T00:00:00,Tarde,0.6467,Sobreesfuerzo,Sobreesfuerzo (11 466 Nm·min),Reducir carga o cambiar herramienta
+4117,M03,2026-09-02T22:30:00,2026-09-02T00:00:00,Noche,0.6567,Herramienta desgastada,Herramienta desgastada (201 min),Cambiar herramienta
+4118,M03,2026-09-02T23:00:00,2026-09-02T00:00:00,Noche,0.8467,Sobreesfuerzo,Sobreesfuerzo (11 363 Nm·min),Reducir carga o cambiar herramienta
+4118,M03,2026-09-02T23:00:00,2026-09-02T00:00:00,Noche,0.8467,Herramienta desgastada,Herramienta desgastada (204 min),Cambiar herramienta
+4119,M03,2026-09-02T23:30:00,2026-09-02T00:00:00,Noche,0.7133,Herramienta desgastada,Herramienta desgastada (206 min),Cambiar herramienta
+4120,M03,2026-09-03T00:00:00,2026-09-02T00:00:00,Noche,0.7033,Herramienta desgastada,Herramienta desgastada (208 min),Cambiar herramienta
+4121,M03,2026-09-03T00:30:00,2026-09-02T00:00:00,Noche,0.76,Herramienta desgastada,Herramienta desgastada (210 min),Cambiar herramienta
+4122,M03,2026-09-03T01:00:00,2026-09-02T00:00:00,Noche,0.7233,Herramienta desgastada,Herramienta desgastada (213 min),Cambiar herramienta
+4131,M03,2026-09-03T05:30:00,2026-09-02T00:00:00,Noche,0.92,Diferencia de temperatura baja,Diferencia de temperatura baja (8.5 °C),Revisar refrigeración/ventilación
+4139,M03,2026-09-03T09:30:00,2026-09-03T00:00:00,Mañana,0.9367,Diferencia de temperatura baja,Diferencia de temperatura baja (8.5 °C),Revisar refrigeración/ventilación
+4141,M03,2026-09-03T10:30:00,2026-09-03T00:00:00,Mañana,0.92,Diferencia de temperatura baja,Diferencia de temperatura baja (8.5 °C),Revisar refrigeración/ventilación
+4152,M03,2026-09-03T16:00:00,2026-09-03T00:00:00,Tarde,0.9033,Diferencia de temperatura baja,Diferencia de temperatura baja (8.5 °C),Revisar refrigeración/ventilación
+4154,M03,2026-09-03T17:00:00,2026-09-03T00:00:00,Tarde,0.9367,Diferencia de temperatura baja,Diferencia de temperatura baja (8.4 °C),Revisar refrigeración/ventilación
+4156,M03,2026-09-03T18:00:00,2026-09-03T00:00:00,Tarde,0.9233,Diferencia de temperatura baja,Diferencia de temperatura baja (8.5 °C),Revisar refrigeración/ventilación
+4158,M03,2026-09-03T19:00:00,2026-09-03T00:00:00,Tarde,0.9267,Diferencia de temperatura baja,Diferencia de temperatura baja (8.5 °C),Revisar refrigeración/ventilación
+2126,M02,2026-09-03T22:00:00,2026-09-03T00:00:00,Noche,0.9067,Potencia alta,Potencia alta (9 143 W),Revisar parámetros de corte
+4165,M03,2026-09-03T22:30:00,2026-09-03T00:00:00,Noche,0.9433,Diferencia de temperatura baja,Diferencia de temperatura baja (8.4 °C),Revisar refrigeración/ventilación
+4171,M03,2026-09-04T01:30:00,2026-09-03T00:00:00,Noche,0.9667,Diferencia de temperatura baja,Diferencia de temperatura baja (8.4 °C),Revisar refrigeración/ventilación
+4174,M03,2026-09-04T03:00:00,2026-09-03T00:00:00,Noche,0.98,Diferencia de temperatura baja,Diferencia de temperatura baja (8.4 °C),Revisar refrigeración/ventilación
+4180,M03,2026-09-04T06:00:00,2026-09-04T00:00:00,Mañana,0.9633,Diferencia de temperatura baja,Diferencia de temperatura baja (8.5 °C),Revisar refrigeración/ventilación
+4183,M03,2026-09-04T07:30:00,2026-09-04T00:00:00,Mañana,0.97,Diferencia de temperatura baja,Diferencia de temperatura baja (8.3 °C),Revisar refrigeración/ventilación
+4185,M03,2026-09-04T08:30:00,2026-09-04T00:00:00,Mañana,0.94,Diferencia de temperatura baja,Diferencia de temperatura baja (8.4 °C),Revisar refrigeración/ventilación
+4186,M03,2026-09-04T09:00:00,2026-09-04T00:00:00,Mañana,0.9833,Diferencia de temperatura baja,Diferencia de temperatura baja (8.4 °C),Revisar refrigeración/ventilación
+6154,M04,2026-09-04T10:30:00,2026-09-04T00:00:00,Mañana,0.6933,Sobreesfuerzo,Sobreesfuerzo (11 399 Nm·min),Reducir carga o cambiar herramienta
+6160,M04,2026-09-04T13:30:00,2026-09-04T00:00:00,Mañana,0.6433,Sobreesfuerzo,Sobreesfuerzo (11 020 Nm·min),Reducir carga o cambiar herramienta
+161,M01,2026-09-04T14:00:00,2026-09-04T00:00:00,Tarde,0.9767,Sobreesfuerzo,Sobreesfuerzo (13 111 Nm·min),Reducir carga o cambiar herramienta
+161,M01,2026-09-04T14:00:00,2026-09-04T00:00:00,Tarde,0.9767,Herramienta desgastada,Herramienta desgastada (216 min),Cambiar herramienta
+162,M01,2026-09-04T14:30:00,2026-09-04T00:00:00,Tarde,0.9367,Sobreesfuerzo,Sobreesfuerzo (11 401 Nm·min),Reducir carga o cambiar herramienta
+162,M01,2026-09-04T14:30:00,2026-09-04T00:00:00,Tarde,0.9367,Herramienta desgastada,Herramienta desgastada (218 min),Cambiar herramienta
+8193,M05,2026-09-04T15:30:00,2026-09-04T00:00:00,Tarde,0.9867,Sobreesfuerzo,Sobreesfuerzo (13 627 Nm·min),Reducir carga o cambiar herramienta
+8193,M05,2026-09-04T15:30:00,2026-09-04T00:00:00,Tarde,0.9867,Herramienta desgastada,Herramienta desgastada (209 min),Cambiar herramienta
+8196,M05,2026-09-04T17:00:00,2026-09-04T00:00:00,Tarde,0.9833,Sobreesfuerzo,Sobreesfuerzo (11 588 Nm·min),Reducir carga o cambiar herramienta
+8196,M05,2026-09-04T17:00:00,2026-09-04T00:00:00,Tarde,0.9833,Herramienta desgastada,Herramienta desgastada (215 min),Cambiar herramienta
+169,M01,2026-09-04T18:00:00,2026-09-04T00:00:00,Tarde,0.85,Potencia alta,Potencia alta (9 349 W),Revisar parámetros de corte
+4212,M03,2026-09-04T22:00:00,2026-09-04T00:00:00,Noche,0.7633,Combinación de variables fuera de lo normal,Combinación de variables fuera de lo normal,Inspección general de la máquina
+6179,M04,2026-09-04T23:00:00,2026-09-04T00:00:00,Noche,0.96,Potencia alta,Potencia alta (9 116 W),Revisar parámetros de corte
+4226,M03,2026-09-05T05:00:00,2026-09-04T00:00:00,Noche,0.86,Combinación de variables fuera de lo normal,Combinación de variables fuera de lo normal,Inspección general de la máquina
+195,M01,2026-09-05T07:00:00,2026-09-05T00:00:00,Mañana,0.97,Potencia baja,Potencia baja (3 001 W),Revisar parámetros de corte
+4232,M03,2026-09-05T08:00:00,2026-09-05T00:00:00,Mañana,0.86,Combinación de variables fuera de lo normal,Combinación de variables fuera de lo normal,Inspección general de la máquina
+208,M01,2026-09-05T13:30:00,2026-09-05T00:00:00,Mañana,0.7567,Potencia alta,Potencia alta (9 033 W),Revisar parámetros de corte
+4248,M03,2026-09-05T16:00:00,2026-09-05T00:00:00,Tarde,0.9133,Diferencia de temperatura baja,Diferencia de temperatura baja (8.4 °C),Revisar refrigeración/ventilación
+4250,M03,2026-09-05T17:00:00,2026-09-05T00:00:00,Tarde,0.94,Diferencia de temperatura baja,Diferencia de temperatura baja (8.4 °C),Revisar refrigeración/ventilación
+4252,M03,2026-09-05T18:00:00,2026-09-05T00:00:00,Tarde,0.9333,Diferencia de temperatura baja,Diferencia de temperatura baja (8.4 °C),Revisar refrigeración/ventilación
+8246,M05,2026-09-05T18:00:00,2026-09-05T00:00:00,Tarde,0.8567,Potencia alta,Potencia alta (9 360 W),Revisar parámetros de corte
+4254,M03,2026-09-05T19:00:00,2026-09-05T00:00:00,Tarde,0.9833,Diferencia de temperatura baja,Diferencia de temperatura baja (8.4 °C),Revisar refrigeración/ventilación
+4255,M03,2026-09-05T19:30:00,2026-09-05T00:00:00,Tarde,0.9767,Diferencia de temperatura baja,Diferencia de temperatura baja (8.4 °C),Revisar refrigeración/ventilación
+4255,M03,2026-09-05T19:30:00,2026-09-05T00:00:00,Tarde,0.9767,Potencia alta,Potencia alta (9 143 W),Revisar parámetros de corte
+4259,M03,2026-09-05T21:30:00,2026-09-05T00:00:00,Tarde,0.8633,Diferencia de temperatura baja,Diferencia de temperatura baja (8.4 °C),Revisar refrigeración/ventilación
+4271,M03,2026-09-06T03:30:00,2026-09-05T00:00:00,Noche,0.9967,Diferencia de temperatura baja,Diferencia de temperatura baja (8.3 °C),Revisar refrigeración/ventilación
+2234,M02,2026-09-06T04:00:00,2026-09-05T00:00:00,Noche,0.8933,Potencia baja,Potencia baja (3 470 W),Revisar parámetros de corte
+243,M01,2026-09-06T07:00:00,2026-09-06T00:00:00,Mañana,0.95,Sobreesfuerzo,Sobreesfuerzo (11 878 Nm·min),Reducir carga o cambiar herramienta
+243,M01,2026-09-06T07:00:00,2026-09-06T00:00:00,Mañana,0.95,Herramienta desgastada,Herramienta desgastada (202 min),Cambiar herramienta
+4280,M03,2026-09-06T08:00:00,2026-09-06T00:00:00,Mañana,0.8933,Diferencia de temperatura baja,Diferencia de temperatura baja (8.1 °C),Revisar refrigeración/ventilación
+4283,M03,2026-09-06T09:30:00,2026-09-06T00:00:00,Mañana,0.95,Diferencia de temperatura baja,Diferencia de temperatura baja (8.0 °C),Revisar refrigeración/ventilación
+6249,M04,2026-09-06T10:00:00,2026-09-06T00:00:00,Mañana,0.8933,Potencia alta,Potencia alta (9 004 W),Revisar parámetros de corte
+6249,M04,2026-09-06T10:00:00,2026-09-06T00:00:00,Mañana,0.8933,Sobreesfuerzo,Sobreesfuerzo (11 567 Nm·min),Reducir carga o cambiar herramienta
+4284,M03,2026-09-06T10:00:00,2026-09-06T00:00:00,Mañana,0.7767,Diferencia de temperatura baja,Diferencia de temperatura baja (8.1 °C),Revisar refrigeración/ventilación
+249,M01,2026-09-06T10:00:00,2026-09-06T00:00:00,Mañana,0.9833,Sobreesfuerzo,Sobreesfuerzo (12 269 Nm·min),Reducir carga o cambiar herramienta
+249,M01,2026-09-06T10:00:00,2026-09-06T00:00:00,Mañana,0.9833,Herramienta desgastada,Herramienta desgastada (216 min),Cambiar herramienta
+250,M01,2026-09-06T10:30:00,2026-09-06T00:00:00,Mañana,0.98,Sobreesfuerzo,Sobreesfuerzo (12 252 Nm·min),Reducir carga o cambiar herramienta
+250,M01,2026-09-06T10:30:00,2026-09-06T00:00:00,Mañana,0.98,Herramienta desgastada,Herramienta desgastada (218 min),Cambiar herramienta
+4286,M03,2026-09-06T11:00:00,2026-09-06T00:00:00,Mañana,0.69,Diferencia de temperatura baja,Diferencia de temperatura baja (8.2 °C),Revisar refrigeración/ventilación
+6256,M04,2026-09-06T13:30:00,2026-09-06T00:00:00,Mañana,0.9167,Sobreesfuerzo,Sobreesfuerzo (11 689 Nm·min),Reducir carga o cambiar herramienta
+6256,M04,2026-09-06T13:30:00,2026-09-06T00:00:00,Mañana,0.9167,Herramienta desgastada,Herramienta desgastada (204 min),Cambiar herramienta
+260,M01,2026-09-06T15:30:00,2026-09-06T00:00:00,Tarde,0.9533,Potencia alta,Potencia alta (9 502 W),Revisar parámetros de corte
+4297,M03,2026-09-06T16:30:00,2026-09-06T00:00:00,Tarde,0.85,Potencia baja,Potencia baja (1 716 W),Revisar parámetros de corte
+4297,M03,2026-09-06T16:30:00,2026-09-06T00:00:00,Tarde,0.85,Herramienta desgastada,Herramienta desgastada (215 min),Cambiar herramienta
+8308,M05,2026-09-07T01:00:00,2026-09-06T00:00:00,Noche,0.8967,Potencia alta,Potencia alta (10 233 W),Revisar parámetros de corte
+4324,M03,2026-09-07T06:00:00,2026-09-07T00:00:00,Mañana,0.7967,Diferencia de temperatura baja,Diferencia de temperatura baja (8.5 °C),Revisar refrigeración/ventilación
+4327,M03,2026-09-07T07:30:00,2026-09-07T00:00:00,Mañana,0.8633,Diferencia de temperatura baja,Diferencia de temperatura baja (8.5 °C),Revisar refrigeración/ventilación
+4329,M03,2026-09-07T08:30:00,2026-09-07T00:00:00,Mañana,0.7067,Diferencia de temperatura baja,Diferencia de temperatura baja (8.5 °C),Revisar refrigeración/ventilación
+2300,M02,2026-09-07T13:00:00,2026-09-07T00:00:00,Mañana,0.85,Potencia alta,Potencia alta (9 525 W),Revisar parámetros de corte
+4343,M03,2026-09-07T15:30:00,2026-09-07T00:00:00,Tarde,0.97,Diferencia de temperatura baja,Diferencia de temperatura baja (8.1 °C),Revisar refrigeración/ventilación
+4343,M03,2026-09-07T15:30:00,2026-09-07T00:00:00,Tarde,0.97,Potencia alta,Potencia alta (9 170 W),Revisar parámetros de corte
+4356,M03,2026-09-07T22:00:00,2026-09-07T00:00:00,Noche,0.74,Diferencia de temperatura baja,Diferencia de temperatura baja (7.8 °C),Revisar refrigeración/ventilación
+4362,M03,2026-09-08T01:00:00,2026-09-07T00:00:00,Noche,0.9467,Diferencia de temperatura baja,Diferencia de temperatura baja (8.0 °C),Revisar refrigeración/ventilación
+328,M01,2026-09-08T01:30:00,2026-09-07T00:00:00,Noche,0.9833,Sobreesfuerzo,Sobreesfuerzo (11 510 Nm·min),Reducir carga o cambiar herramienta
+328,M01,2026-09-08T01:30:00,2026-09-07T00:00:00,Noche,0.9833,Herramienta desgastada,Herramienta desgastada (203 min),Cambiar herramienta
+2332,M02,2026-09-08T05:00:00,2026-09-07T00:00:00,Noche,0.9267,Sobreesfuerzo,Sobreesfuerzo (11 685 Nm·min),Reducir carga o cambiar herramienta
+2332,M02,2026-09-08T05:00:00,2026-09-07T00:00:00,Noche,0.9267,Herramienta desgastada,Herramienta desgastada (218 min),Cambiar herramienta
+4371,M03,2026-09-08T05:30:00,2026-09-07T00:00:00,Noche,0.9533,Diferencia de temperatura baja,Diferencia de temperatura baja (7.9 °C),Revisar refrigeración/ventilación
+4371,M03,2026-09-08T05:30:00,2026-09-07T00:00:00,Noche,0.9533,Sobreesfuerzo,Sobreesfuerzo (11 347 Nm·min),Reducir carga o cambiar herramienta
+2333,M02,2026-09-08T05:30:00,2026-09-07T00:00:00,Noche,0.86,Sobreesfuerzo,Sobreesfuerzo (11 088 Nm·min),Reducir carga o cambiar herramienta
+2333,M02,2026-09-08T05:30:00,2026-09-07T00:00:00,Noche,0.86,Herramienta desgastada,Herramienta desgastada (220 min),Cambiar herramienta
+4384,M03,2026-09-08T12:00:00,2026-09-08T00:00:00,Mañana,0.9333,Diferencia de temperatura baja,Diferencia de temperatura baja (7.8 °C),Revisar refrigeración/ventilación
+4384,M03,2026-09-08T12:00:00,2026-09-08T00:00:00,Mañana,0.9333,Sobreesfuerzo,Sobreesfuerzo (15 000 Nm·min),Reducir carga o cambiar herramienta
+4384,M03,2026-09-08T12:00:00,2026-09-08T00:00:00,Mañana,0.9333,Herramienta desgastada,Herramienta desgastada (229 min),Cambiar herramienta
+4390,M03,2026-09-08T15:00:00,2026-09-08T00:00:00,Tarde,0.7867,Diferencia de temperatura baja,Diferencia de temperatura baja (7.9 °C),Revisar refrigeración/ventilación
+4392,M03,2026-09-08T16:00:00,2026-09-08T00:00:00,Tarde,0.9133,Diferencia de temperatura baja,Diferencia de temperatura baja (7.9 °C),Revisar refrigeración/ventilación
+4401,M03,2026-09-08T20:30:00,2026-09-08T00:00:00,Tarde,0.9367,Diferencia de temperatura baja,Diferencia de temperatura baja (7.8 °C),Revisar refrigeración/ventilación
+8399,M05,2026-09-08T22:30:00,2026-09-08T00:00:00,Noche,0.9967,Potencia baja,Potencia baja (3 316 W),Revisar parámetros de corte
+4406,M03,2026-09-08T23:00:00,2026-09-08T00:00:00,Noche,0.9633,Diferencia de temperatura baja,Diferencia de temperatura baja (7.8 °C),Revisar refrigeración/ventilación
+4407,M03,2026-09-08T23:30:00,2026-09-08T00:00:00,Noche,0.9733,Diferencia de temperatura baja,Diferencia de temperatura baja (7.8 °C),Revisar refrigeración/ventilación
+4410,M03,2026-09-09T01:00:00,2026-09-08T00:00:00,Noche,0.92,Diferencia de temperatura baja,Diferencia de temperatura baja (7.7 °C),Revisar refrigeración/ventilación
+381,M01,2026-09-09T04:00:00,2026-09-08T00:00:00,Noche,0.9767,Potencia baja,Potencia baja (3 437 W),Revisar parámetros de corte
+4418,M03,2026-09-09T05:00:00,2026-09-08T00:00:00,Noche,0.99,Diferencia de temperatura baja,Diferencia de temperatura baja (7.8 °C),Revisar refrigeración/ventilación
+4418,M03,2026-09-09T05:00:00,2026-09-08T00:00:00,Noche,0.99,Potencia alta,Potencia alta (9 549 W),Revisar parámetros de corte
+4420,M03,2026-09-09T06:00:00,2026-09-09T00:00:00,Mañana,0.9233,Potencia baja,Potencia baja (3 026 W),Revisar parámetros de corte
+4422,M03,2026-09-09T07:00:00,2026-09-09T00:00:00,Mañana,0.9333,Diferencia de temperatura baja,Diferencia de temperatura baja (7.6 °C),Revisar refrigeración/ventilación
+4428,M03,2026-09-09T10:00:00,2026-09-09T00:00:00,Mañana,0.9,Diferencia de temperatura baja,Diferencia de temperatura baja (7.7 °C),Revisar refrigeración/ventilación
+4436,M03,2026-09-09T14:00:00,2026-09-09T00:00:00,Tarde,0.97,Diferencia de temperatura baja,Diferencia de temperatura baja (7.8 °C),Revisar refrigeración/ventilación
+4442,M03,2026-09-09T17:00:00,2026-09-09T00:00:00,Tarde,0.95,Diferencia de temperatura baja,Diferencia de temperatura baja (7.7 °C),Revisar refrigeración/ventilación
+8438,M05,2026-09-09T18:00:00,2026-09-09T00:00:00,Tarde,0.9167,Sobreesfuerzo,Sobreesfuerzo (13 378 Nm·min),Reducir carga o cambiar herramienta
+8438,M05,2026-09-09T18:00:00,2026-09-09T00:00:00,Tarde,0.9167,Herramienta desgastada,Herramienta desgastada (203 min),Cambiar herramienta
+4449,M03,2026-09-09T20:30:00,2026-09-09T00:00:00,Tarde,0.92,Diferencia de temperatura baja,Diferencia de temperatura baja (7.9 °C),Revisar refrigeración/ventilación
+4450,M03,2026-09-09T21:00:00,2026-09-09T00:00:00,Tarde,0.86,Diferencia de temperatura baja,Diferencia de temperatura baja (7.9 °C),Revisar refrigeración/ventilación
+4463,M03,2026-09-10T03:30:00,2026-09-09T00:00:00,Noche,0.99,Diferencia de temperatura baja,Diferencia de temperatura baja (7.8 °C),Revisar refrigeración/ventilación
+4463,M03,2026-09-10T03:30:00,2026-09-09T00:00:00,Noche,0.99,Sobreesfuerzo,Sobreesfuerzo (13 357 Nm·min),Reducir carga o cambiar herramienta
+2427,M02,2026-09-10T04:30:00,2026-09-09T00:00:00,Noche,0.8967,Potencia alta,Potencia alta (9 138 W),Revisar parámetros de corte
+4476,M03,2026-09-10T10:00:00,2026-09-10T00:00:00,Mañana,0.7933,Diferencia de temperatura baja,Diferencia de temperatura baja (7.8 °C),Revisar refrigeración/ventilación
+443,M01,2026-09-10T11:00:00,2026-09-10T00:00:00,Mañana,0.7067,Potencia alta,Potencia alta (9 010 W),Revisar parámetros de corte
+4481,M03,2026-09-10T12:30:00,2026-09-10T00:00:00,Mañana,0.94,Diferencia de temperatura baja,Diferencia de temperatura baja (7.7 °C),Revisar refrigeración/ventilación
+2445,M02,2026-09-10T13:30:00,2026-09-10T00:00:00,Mañana,0.96,Potencia alta,Potencia alta (9 049 W),Revisar parámetros de corte
+4496,M03,2026-09-10T20:00:00,2026-09-10T00:00:00,Tarde,0.9367,Diferencia de temperatura baja,Diferencia de temperatura baja (7.8 °C),Revisar refrigeración/ventilación
+464,M01,2026-09-10T21:30:00,2026-09-10T00:00:00,Tarde,0.9867,Potencia baja,Potencia baja (1 264 W),Revisar parámetros de corte
+4502,M03,2026-09-10T23:00:00,2026-09-10T00:00:00,Noche,0.9767,Diferencia de temperatura baja,Diferencia de temperatura baja (7.7 °C),Revisar refrigeración/ventilación
+4511,M03,2026-09-11T03:30:00,2026-09-10T00:00:00,Noche,0.91,Diferencia de temperatura baja,Diferencia de temperatura baja (7.8 °C),Revisar refrigeración/ventilación
+4528,M03,2026-09-11T12:00:00,2026-09-11T00:00:00,Mañana,0.91,Diferencia de temperatura baja,Diferencia de temperatura baja (8.1 °C),Revisar refrigeración/ventilación
+2495,M02,2026-09-11T14:30:00,2026-09-11T00:00:00,Tarde,0.7567,Sobreesfuerzo,Sobreesfuerzo (11 095 Nm·min),Reducir carga o cambiar herramienta
+2495,M02,2026-09-11T14:30:00,2026-09-11T00:00:00,Tarde,0.7567,Herramienta desgastada,Herramienta desgastada (207 min),Cambiar herramienta
+6498,M04,2026-09-11T14:30:00,2026-09-11T00:00:00,Tarde,0.97,Sobreesfuerzo,Sobreesfuerzo (12 538 Nm·min),Reducir carga o cambiar herramienta
+4534,M03,2026-09-11T15:00:00,2026-09-11T00:00:00,Tarde,0.9267,Diferencia de temperatura baja,Diferencia de temperatura baja (7.9 °C),Revisar refrigeración/ventilación
+4537,M03,2026-09-11T16:30:00,2026-09-11T00:00:00,Tarde,0.9533,Diferencia de temperatura baja,Diferencia de temperatura baja (7.8 °C),Revisar refrigeración/ventilación
+2503,M02,2026-09-11T18:30:00,2026-09-11T00:00:00,Tarde,0.76,Sobreesfuerzo,Sobreesfuerzo (11 149 Nm·min),Reducir carga o cambiar herramienta
+2503,M02,2026-09-11T18:30:00,2026-09-11T00:00:00,Tarde,0.76,Herramienta desgastada,Herramienta desgastada (228 min),Cambiar herramienta
+4545,M03,2026-09-11T20:30:00,2026-09-11T00:00:00,Tarde,0.7433,Diferencia de temperatura baja,Diferencia de temperatura baja (7.9 °C),Revisar refrigeración/ventilación
+4557,M03,2026-09-12T02:30:00,2026-09-11T00:00:00,Noche,0.9433,Diferencia de temperatura baja,Diferencia de temperatura baja (7.9 °C),Revisar refrigeración/ventilación
+4559,M03,2026-09-12T03:30:00,2026-09-11T00:00:00,Noche,0.9767,Diferencia de temperatura baja,Diferencia de temperatura baja (8.0 °C),Revisar refrigeración/ventilación
+6526,M04,2026-09-12T04:30:00,2026-09-11T00:00:00,Noche,0.97,Potencia alta,Potencia alta (10 112 W),Revisar parámetros de corte
+4566,M03,2026-09-12T07:00:00,2026-09-12T00:00:00,Mañana,0.9567,Diferencia de temperatura baja,Diferencia de temperatura baja (8.1 °C),Revisar refrigeración/ventilación
+4571,M03,2026-09-12T09:30:00,2026-09-12T00:00:00,Mañana,0.98,Diferencia de temperatura baja,Diferencia de temperatura baja (8.1 °C),Revisar refrigeración/ventilación
+6541,M04,2026-09-12T12:00:00,2026-09-12T00:00:00,Mañana,0.8733,Potencia alta,Potencia alta (9 125 W),Revisar parámetros de corte
+4580,M03,2026-09-12T14:00:00,2026-09-12T00:00:00,Tarde,0.9833,Diferencia de temperatura baja,Diferencia de temperatura baja (8.2 °C),Revisar refrigeración/ventilación
+8583,M05,2026-09-12T18:30:00,2026-09-12T00:00:00,Tarde,0.8267,Potencia alta,Potencia alta (10 058 W),Revisar parámetros de corte
+4597,M03,2026-09-12T22:30:00,2026-09-12T00:00:00,Noche,0.9767,Diferencia de temperatura baja,Diferencia de temperatura baja (8.2 °C),Revisar refrigeración/ventilación
+4601,M03,2026-09-13T00:30:00,2026-09-12T00:00:00,Noche,0.92,Diferencia de temperatura baja,Diferencia de temperatura baja (8.0 °C),Revisar refrigeración/ventilación
+4602,M03,2026-09-13T01:00:00,2026-09-12T00:00:00,Noche,0.9067,Diferencia de temperatura baja,Diferencia de temperatura baja (8.1 °C),Revisar refrigeración/ventilación
+4612,M03,2026-09-13T06:00:00,2026-09-13T00:00:00,Mañana,0.9167,Diferencia de temperatura baja,Diferencia de temperatura baja (8.3 °C),Revisar refrigeración/ventilación
+8609,M05,2026-09-13T07:30:00,2026-09-13T00:00:00,Mañana,0.8433,Sobreesfuerzo,Sobreesfuerzo (11 132 Nm·min),Reducir carga o cambiar herramienta
+8609,M05,2026-09-13T07:30:00,2026-09-13T00:00:00,Mañana,0.8433,Herramienta desgastada,Herramienta desgastada (220 min),Cambiar herramienta
+4619,M03,2026-09-13T09:30:00,2026-09-13T00:00:00,Mañana,0.9633,Diferencia de temperatura baja,Diferencia de temperatura baja (8.3 °C),Revisar refrigeración/ventilación
+2582,M02,2026-09-13T10:00:00,2026-09-13T00:00:00,Mañana,0.96,Sobreesfuerzo,Sobreesfuerzo (11 594 Nm·min),Reducir carga o cambiar herramienta
+4621,M03,2026-09-13T10:30:00,2026-09-13T00:00:00,Mañana,0.9533,Diferencia de temperatura baja,Diferencia de temperatura baja (8.2 °C),Revisar refrigeración/ventilación
+4622,M03,2026-09-13T11:00:00,2026-09-13T00:00:00,Mañana,0.9733,Diferencia de temperatura baja,Diferencia de temperatura baja (8.2 °C),Revisar refrigeración/ventilación
+2599,M02,2026-09-13T18:30:00,2026-09-13T00:00:00,Tarde,0.9433,Potencia alta,Potencia alta (9 330 W),Revisar parámetros de corte
+604,M01,2026-09-13T19:30:00,2026-09-13T00:00:00,Tarde,0.8133,Potencia alta,Potencia alta (10 017 W),Revisar parámetros de corte
+4643,M03,2026-09-13T21:30:00,2026-09-13T00:00:00,Tarde,0.8633,Diferencia de temperatura baja,Diferencia de temperatura baja (8.2 °C),Revisar refrigeración/ventilación
+4643,M03,2026-09-13T21:30:00,2026-09-13T00:00:00,Tarde,0.8633,Sobreesfuerzo,Sobreesfuerzo (12 340 Nm·min),Reducir carga o cambiar herramienta
+4643,M03,2026-09-13T21:30:00,2026-09-13T00:00:00,Tarde,0.8633,Herramienta desgastada,Herramienta desgastada (226 min),Cambiar herramienta
+4644,M03,2026-09-13T22:00:00,2026-09-13T00:00:00,Noche,0.97,Diferencia de temperatura baja,Diferencia de temperatura baja (8.2 °C),Revisar refrigeración/ventilación
+4644,M03,2026-09-13T22:00:00,2026-09-13T00:00:00,Noche,0.97,Sobreesfuerzo,Sobreesfuerzo (12 358 Nm·min),Reducir carga o cambiar herramienta
+4644,M03,2026-09-13T22:00:00,2026-09-13T00:00:00,Noche,0.97,Herramienta desgastada,Herramienta desgastada (228 min),Cambiar herramienta
+4652,M03,2026-09-14T02:00:00,2026-09-13T00:00:00,Noche,0.9667,Diferencia de temperatura baja,Diferencia de temperatura baja (8.2 °C),Revisar refrigeración/ventilación
+6619,M04,2026-09-14T03:00:00,2026-09-13T00:00:00,Noche,0.77,Potencia alta,Potencia alta (9 020 W),Revisar parámetros de corte
+4662,M03,2026-09-14T07:00:00,2026-09-14T00:00:00,Mañana,0.98,Diferencia de temperatura baja,Diferencia de temperatura baja (8.0 °C),Revisar refrigeración/ventilación
+4666,M03,2026-09-14T09:00:00,2026-09-14T00:00:00,Mañana,0.9167,Diferencia de temperatura baja,Diferencia de temperatura baja (8.0 °C),Revisar refrigeración/ventilación
+4670,M03,2026-09-14T11:00:00,2026-09-14T00:00:00,Mañana,0.8967,Diferencia de temperatura baja,Diferencia de temperatura baja (8.2 °C),Revisar refrigeración/ventilación
+4703,M03,2026-09-15T03:30:00,2026-09-14T00:00:00,Noche,0.6833,Diferencia de temperatura baja,Diferencia de temperatura baja (8.2 °C),Revisar refrigeración/ventilación
+6674,M04,2026-09-15T06:30:00,2026-09-15T00:00:00,Mañana,0.7733,Sobreesfuerzo,Sobreesfuerzo (11 189 Nm·min),Reducir carga o cambiar herramienta
+6674,M04,2026-09-15T06:30:00,2026-09-15T00:00:00,Mañana,0.7733,Herramienta desgastada,Herramienta desgastada (216 min),Cambiar herramienta
+6679,M04,2026-09-15T09:00:00,2026-09-15T00:00:00,Mañana,0.8867,Potencia alta,Potencia alta (9 178 W),Revisar parámetros de corte
+4719,M03,2026-09-15T11:30:00,2026-09-15T00:00:00,Mañana,0.7967,Diferencia de temperatura baja,Diferencia de temperatura baja (8.3 °C),Revisar refrigeración/ventilación
+4724,M03,2026-09-15T14:00:00,2026-09-15T00:00:00,Tarde,0.6233,Diferencia de temperatura baja,Diferencia de temperatura baja (8.4 °C),Revisar refrigeración/ventilación
+4724,M03,2026-09-15T14:00:00,2026-09-15T00:00:00,Tarde,0.6233,Herramienta desgastada,Herramienta desgastada (200 min),Cambiar herramienta
+4728,M03,2026-09-15T16:00:00,2026-09-15T00:00:00,Tarde,0.8167,Diferencia de temperatura baja,Diferencia de temperatura baja (8.4 °C),Revisar refrigeración/ventilación
+4728,M03,2026-09-15T16:00:00,2026-09-15T00:00:00,Tarde,0.8167,Herramienta desgastada,Herramienta desgastada (210 min),Cambiar herramienta
+4730,M03,2026-09-15T17:00:00,2026-09-15T00:00:00,Tarde,0.9733,Diferencia de temperatura baja,Diferencia de temperatura baja (8.4 °C),Revisar refrigeración/ventilación
+4730,M03,2026-09-15T17:00:00,2026-09-15T00:00:00,Tarde,0.9733,Sobreesfuerzo,Sobreesfuerzo (13 115 Nm·min),Reducir carga o cambiar herramienta
+4730,M03,2026-09-15T17:00:00,2026-09-15T00:00:00,Tarde,0.9733,Herramienta desgastada,Herramienta desgastada (215 min),Cambiar herramienta
+4732,M03,2026-09-15T18:00:00,2026-09-15T00:00:00,Tarde,0.67,Diferencia de temperatura baja,Diferencia de temperatura baja (8.3 °C),Revisar refrigeración/ventilación
+4732,M03,2026-09-15T18:00:00,2026-09-15T00:00:00,Tarde,0.67,Herramienta desgastada,Herramienta desgastada (219 min),Cambiar herramienta
+4740,M03,2026-09-15T22:00:00,2026-09-15T00:00:00,Noche,0.8933,Diferencia de temperatura baja,Diferencia de temperatura baja (8.2 °C),Revisar refrigeración/ventilación
+2706,M02,2026-09-16T00:00:00,2026-09-15T00:00:00,Noche,0.6567,Combinación de variables fuera de lo normal,Combinación de variables fuera de lo normal,Inspección general de la máquina
+4749,M03,2026-09-16T02:30:00,2026-09-15T00:00:00,Noche,0.9467,Diferencia de temperatura baja,Diferencia de temperatura baja (8.0 °C),Revisar refrigeración/ventilación
+4756,M03,2026-09-16T06:00:00,2026-09-16T00:00:00,Mañana,0.9133,Diferencia de temperatura baja,Diferencia de temperatura baja (8.3 °C),Revisar refrigeración/ventilación
+4760,M03,2026-09-16T08:00:00,2026-09-16T00:00:00,Mañana,0.92,Diferencia de temperatura baja,Diferencia de temperatura baja (8.1 °C),Revisar refrigeración/ventilación
+4762,M03,2026-09-16T09:00:00,2026-09-16T00:00:00,Mañana,0.94,Diferencia de temperatura baja,Diferencia de temperatura baja (8.2 °C),Revisar refrigeración/ventilación
+4763,M03,2026-09-16T09:30:00,2026-09-16T00:00:00,Mañana,0.95,Potencia baja,Potencia baja (3 179 W),Revisar parámetros de corte
+4769,M03,2026-09-16T12:30:00,2026-09-16T00:00:00,Mañana,0.96,Diferencia de temperatura baja,Diferencia de temperatura baja (8.4 °C),Revisar refrigeración/ventilación
+4771,M03,2026-09-16T13:30:00,2026-09-16T00:00:00,Mañana,0.96,Diferencia de temperatura baja,Diferencia de temperatura baja (8.4 °C),Revisar refrigeración/ventilación
+747,M01,2026-09-16T19:00:00,2026-09-16T00:00:00,Tarde,0.9,Sobreesfuerzo,Sobreesfuerzo (12 338 Nm·min),Reducir carga o cambiar herramienta
+2762,M02,2026-09-17T04:00:00,2026-09-16T00:00:00,Noche,0.96,Sobreesfuerzo,Sobreesfuerzo (13 801 Nm·min),Reducir carga o cambiar herramienta
+2762,M02,2026-09-17T04:00:00,2026-09-16T00:00:00,Noche,0.96,Herramienta desgastada,Herramienta desgastada (212 min),Cambiar herramienta
+4815,M03,2026-09-17T11:30:00,2026-09-17T00:00:00,Mañana,0.6267,Sobreesfuerzo,Sobreesfuerzo (11 024 Nm·min),Reducir carga o cambiar herramienta
+4815,M03,2026-09-17T11:30:00,2026-09-17T00:00:00,Mañana,0.6267,Herramienta desgastada,Herramienta desgastada (208 min),Cambiar herramienta
+4832,M03,2026-09-17T20:00:00,2026-09-17T00:00:00,Tarde,0.8033,Diferencia de temperatura baja,Diferencia de temperatura baja (8.5 °C),Revisar refrigeración/ventilación
+4834,M03,2026-09-17T21:00:00,2026-09-17T00:00:00,Tarde,0.6267,Diferencia de temperatura baja,Diferencia de temperatura baja (8.5 °C),Revisar refrigeración/ventilación
+6800,M04,2026-09-17T21:30:00,2026-09-17T00:00:00,Tarde,0.9933,Potencia baja,Potencia baja (3 368 W),Revisar parámetros de corte
+4837,M03,2026-09-17T22:30:00,2026-09-17T00:00:00,Noche,0.8467,Diferencia de temperatura baja,Diferencia de temperatura baja (8.5 °C),Revisar refrigeración/ventilación
+4841,M03,2026-09-18T00:30:00,2026-09-17T00:00:00,Noche,0.89,Diferencia de temperatura baja,Diferencia de temperatura baja (8.5 °C),Revisar refrigeración/ventilación
+4845,M03,2026-09-18T02:30:00,2026-09-17T00:00:00,Noche,0.95,Diferencia de temperatura baja,Diferencia de temperatura baja (8.4 °C),Revisar refrigeración/ventilación
+4852,M03,2026-09-18T06:00:00,2026-09-18T00:00:00,Mañana,0.8467,Diferencia de temperatura baja,Diferencia de temperatura baja (8.4 °C),Revisar refrigeración/ventilación
+8847,M05,2026-09-18T06:30:00,2026-09-18T00:00:00,Mañana,0.81,Sobreesfuerzo,Sobreesfuerzo (12 730 Nm·min),Reducir carga o cambiar herramienta
+8847,M05,2026-09-18T06:30:00,2026-09-18T00:00:00,Mañana,0.81,Herramienta desgastada,Herramienta desgastada (204 min),Cambiar herramienta
+4856,M03,2026-09-18T08:00:00,2026-09-18T00:00:00,Mañana,0.6067,Combinación de variables fuera de lo normal,Combinación de variables fuera de lo normal,Inspección general de la máquina
+4863,M03,2026-09-18T11:30:00,2026-09-18T00:00:00,Mañana,0.77,Combinación de variables fuera de lo normal,Combinación de variables fuera de lo normal,Inspección general de la máquina
+848,M01,2026-09-18T21:30:00,2026-09-18T00:00:00,Tarde,0.7167,Potencia baja,Potencia baja (1 661 W),Revisar parámetros de corte
+848,M01,2026-09-18T21:30:00,2026-09-18T00:00:00,Tarde,0.7167,Herramienta desgastada,Herramienta desgastada (213 min),Cambiar herramienta
+2849,M02,2026-09-18T23:30:00,2026-09-18T00:00:00,Noche,0.6,Herramienta desgastada,Herramienta desgastada (204 min),Cambiar herramienta
+2859,M02,2026-09-19T04:30:00,2026-09-18T00:00:00,Noche,0.6267,Sobreesfuerzo,Sobreesfuerzo (11 896 Nm·min),Reducir carga o cambiar herramienta
+2859,M02,2026-09-19T04:30:00,2026-09-18T00:00:00,Noche,0.6267,Herramienta desgastada,Herramienta desgastada (231 min),Cambiar herramienta
+4899,M03,2026-09-19T05:30:00,2026-09-18T00:00:00,Noche,0.6533,Herramienta desgastada,Herramienta desgastada (214 min),Cambiar herramienta
+881,M01,2026-09-19T14:00:00,2026-09-19T00:00:00,Tarde,0.75,Potencia alta,Potencia alta (9 855 W),Revisar parámetros de corte
+2880,M02,2026-09-19T15:00:00,2026-09-19T00:00:00,Tarde,0.8367,Potencia alta,Potencia alta (9 047 W),Revisar parámetros de corte
+4921,M03,2026-09-19T16:30:00,2026-09-19T00:00:00,Tarde,0.8633,Potencia alta,Potencia alta (9 717 W),Revisar parámetros de corte
+8927,M05,2026-09-19T22:30:00,2026-09-19T00:00:00,Noche,0.6433,Potencia alta,Potencia alta (9 106 W),Revisar parámetros de corte
+8927,M05,2026-09-19T22:30:00,2026-09-19T00:00:00,Noche,0.6433,Sobreesfuerzo,Sobreesfuerzo (12 337 Nm·min),Reducir carga o cambiar herramienta
+8927,M05,2026-09-19T22:30:00,2026-09-19T00:00:00,Noche,0.6433,Herramienta desgastada,Herramienta desgastada (207 min),Cambiar herramienta
+4937,M03,2026-09-20T00:30:00,2026-09-19T00:00:00,Noche,0.7767,Potencia alta,Potencia alta (9 493 W),Revisar parámetros de corte
+904,M01,2026-09-20T01:30:00,2026-09-19T00:00:00,Noche,0.7067,Potencia baja,Potencia baja (3 471 W),Revisar parámetros de corte
+6925,M04,2026-09-20T12:00:00,2026-09-20T00:00:00,Mañana,0.7033,Sobreesfuerzo,Sobreesfuerzo (11 003 Nm·min),Reducir carga o cambiar herramienta
+6925,M04,2026-09-20T12:00:00,2026-09-20T00:00:00,Mañana,0.7033,Herramienta desgastada,Herramienta desgastada (208 min),Cambiar herramienta
+927,M01,2026-09-20T13:00:00,2026-09-20T00:00:00,Mañana,0.6567,Sobreesfuerzo,Sobreesfuerzo (11 954 Nm·min),Reducir carga o cambiar herramienta
+927,M01,2026-09-20T13:00:00,2026-09-20T00:00:00,Mañana,0.6567,Herramienta desgastada,Herramienta desgastada (215 min),Cambiar herramienta
+6933,M04,2026-09-20T16:00:00,2026-09-20T00:00:00,Tarde,0.9233,Potencia alta,Potencia alta (9 303 W),Revisar parámetros de corte
+4977,M03,2026-09-20T20:30:00,2026-09-20T00:00:00,Tarde,0.81,Sobreesfuerzo,Sobreesfuerzo (11 019 Nm·min),Reducir carga o cambiar herramienta
+4985,M03,2026-09-21T00:30:00,2026-09-20T00:00:00,Noche,0.7467,Sobreesfuerzo,Sobreesfuerzo (12 503 Nm·min),Reducir carga o cambiar herramienta
+4985,M03,2026-09-21T00:30:00,2026-09-20T00:00:00,Noche,0.7467,Herramienta desgastada,Herramienta desgastada (213 min),Cambiar herramienta
+4989,M03,2026-09-21T02:30:00,2026-09-20T00:00:00,Noche,0.8,Potencia baja,Potencia baja (3 399 W),Revisar parámetros de corte
+4998,M03,2026-09-21T07:00:00,2026-09-21T00:00:00,Mañana,0.9567,Potencia baja,Potencia baja (3 174 W),Revisar parámetros de corte
+9015,M05,2026-09-21T18:30:00,2026-09-21T00:00:00,Tarde,0.8833,Sobreesfuerzo,Sobreesfuerzo (12 689 Nm·min),Reducir carga o cambiar herramienta
+9015,M05,2026-09-21T18:30:00,2026-09-21T00:00:00,Tarde,0.8833,Herramienta desgastada,Herramienta desgastada (207 min),Cambiar herramienta
+9017,M05,2026-09-21T19:30:00,2026-09-21T00:00:00,Tarde,0.85,Sobreesfuerzo,Sobreesfuerzo (11 172 Nm·min),Reducir carga o cambiar herramienta
+9017,M05,2026-09-21T19:30:00,2026-09-21T00:00:00,Tarde,0.85,Herramienta desgastada,Herramienta desgastada (212 min),Cambiar herramienta
+6991,M04,2026-09-21T21:00:00,2026-09-21T00:00:00,Tarde,0.83,Potencia baja,Potencia baja (3 477 W),Revisar parámetros de corte
+3001,M02,2026-09-22T03:30:00,2026-09-21T00:00:00,Noche,0.8367,Potencia alta,Potencia alta (10 094 W),Revisar parámetros de corte
+7012,M04,2026-09-22T07:30:00,2026-09-22T00:00:00,Mañana,0.9967,Potencia baja,Potencia baja (3 364 W),Revisar parámetros de corte
+5049,M03,2026-09-22T08:30:00,2026-09-22T00:00:00,Mañana,0.71,Potencia alta,Potencia alta (9 131 W),Revisar parámetros de corte
+1017,M01,2026-09-22T10:00:00,2026-09-22T00:00:00,Mañana,0.89,Potencia alta,Potencia alta (9 434 W),Revisar parámetros de corte
+3020,M02,2026-09-22T13:00:00,2026-09-22T00:00:00,Mañana,0.96,Sobreesfuerzo,Sobreesfuerzo (11 219 Nm·min),Reducir carga o cambiar herramienta
+3020,M02,2026-09-22T13:00:00,2026-09-22T00:00:00,Mañana,0.96,Herramienta desgastada,Herramienta desgastada (207 min),Cambiar herramienta
+5062,M03,2026-09-22T15:00:00,2026-09-22T00:00:00,Tarde,0.9,Sobreesfuerzo,Sobreesfuerzo (12 500 Nm·min),Reducir carga o cambiar herramienta
+5062,M03,2026-09-22T15:00:00,2026-09-22T00:00:00,Tarde,0.9,Herramienta desgastada,Herramienta desgastada (200 min),Cambiar herramienta
+9085,M05,2026-09-23T05:30:00,2026-09-22T00:00:00,Noche,0.9867,Potencia alta,Potencia alta (10 470 W),Revisar parámetros de corte
+9085,M05,2026-09-23T05:30:00,2026-09-22T00:00:00,Noche,0.9867,Sobreesfuerzo,Sobreesfuerzo (12 969 Nm·min),Reducir carga o cambiar herramienta
+7084,M04,2026-09-23T19:30:00,2026-09-23T00:00:00,Tarde,0.97,Potencia alta,Potencia alta (9 164 W),Revisar parámetros de corte
+7084,M04,2026-09-23T19:30:00,2026-09-23T00:00:00,Tarde,0.97,Sobreesfuerzo,Sobreesfuerzo (12 916 Nm·min),Reducir carga o cambiar herramienta
+7084,M04,2026-09-23T19:30:00,2026-09-23T00:00:00,Tarde,0.97,Herramienta desgastada,Herramienta desgastada (209 min),Cambiar herramienta
+1086,M01,2026-09-23T20:30:00,2026-09-23T00:00:00,Tarde,0.83,Sobreesfuerzo,Sobreesfuerzo (11 393 Nm·min),Reducir carga o cambiar herramienta
+1086,M01,2026-09-23T20:30:00,2026-09-23T00:00:00,Tarde,0.83,Herramienta desgastada,Herramienta desgastada (202 min),Cambiar herramienta
+1096,M01,2026-09-24T01:30:00,2026-09-23T00:00:00,Noche,0.95,Potencia baja,Potencia baja (2 650 W),Revisar parámetros de corte
+1124,M01,2026-09-24T15:30:00,2026-09-24T00:00:00,Tarde,0.7567,Potencia alta,Potencia alta (9 042 W),Revisar parámetros de corte
+1125,M01,2026-09-24T16:00:00,2026-09-24T00:00:00,Tarde,0.98,Potencia alta,Potencia alta (9 090 W),Revisar parámetros de corte
+3141,M02,2026-09-25T01:30:00,2026-09-24T00:00:00,Noche,0.8767,Potencia baja,Potencia baja (3 436 W),Revisar parámetros de corte
+1145,M01,2026-09-25T02:00:00,2026-09-24T00:00:00,Noche,0.8633,Potencia alta,Potencia alta (9 378 W),Revisar parámetros de corte
+9176,M05,2026-09-25T03:00:00,2026-09-24T00:00:00,Noche,0.8033,Potencia alta,Potencia alta (9 432 W),Revisar parámetros de corte
+1162,M01,2026-09-25T10:30:00,2026-09-25T00:00:00,Mañana,0.98,Sobreesfuerzo,Sobreesfuerzo (12 240 Nm·min),Reducir carga o cambiar herramienta
+1162,M01,2026-09-25T10:30:00,2026-09-25T00:00:00,Mañana,0.98,Herramienta desgastada,Herramienta desgastada (200 min),Cambiar herramienta
+1163,M01,2026-09-25T11:00:00,2026-09-25T00:00:00,Mañana,0.8433,Sobreesfuerzo,Sobreesfuerzo (11 534 Nm·min),Reducir carga o cambiar herramienta
+1163,M01,2026-09-25T11:00:00,2026-09-25T00:00:00,Mañana,0.8433,Herramienta desgastada,Herramienta desgastada (202 min),Cambiar herramienta
+1168,M01,2026-09-25T13:30:00,2026-09-25T00:00:00,Mañana,0.8133,Sobreesfuerzo,Sobreesfuerzo (11 182 Nm·min),Reducir carga o cambiar herramienta
+1168,M01,2026-09-25T13:30:00,2026-09-25T00:00:00,Mañana,0.8133,Herramienta desgastada,Herramienta desgastada (213 min),Cambiar herramienta
+7168,M04,2026-09-25T13:30:00,2026-09-25T00:00:00,Mañana,0.9867,Sobreesfuerzo,Sobreesfuerzo (12 422 Nm·min),Reducir carga o cambiar herramienta
+7168,M04,2026-09-25T13:30:00,2026-09-25T00:00:00,Mañana,0.9867,Herramienta desgastada,Herramienta desgastada (206 min),Cambiar herramienta
+5220,M03,2026-09-25T22:00:00,2026-09-25T00:00:00,Noche,0.88,Sobreesfuerzo,Sobreesfuerzo (12 280 Nm·min),Reducir carga o cambiar herramienta
+5220,M03,2026-09-25T22:00:00,2026-09-25T00:00:00,Noche,0.88,Herramienta desgastada,Herramienta desgastada (205 min),Cambiar herramienta
+3267,M02,2026-09-27T16:30:00,2026-09-27T00:00:00,Tarde,0.6567,Sobreesfuerzo,Sobreesfuerzo (11 076 Nm·min),Reducir carga o cambiar herramienta
+7281,M04,2026-09-27T22:00:00,2026-09-27T00:00:00,Noche,0.9833,Potencia alta,Potencia alta (9 388 W),Revisar parámetros de corte
+5335,M03,2026-09-28T07:30:00,2026-09-28T00:00:00,Mañana,0.9967,Potencia baja,Potencia baja (2 777 W),Revisar parámetros de corte
+1325,M01,2026-09-28T20:00:00,2026-09-28T00:00:00,Tarde,0.8067,Potencia alta,Potencia alta (9 697 W),Revisar parámetros de corte
+1325,M01,2026-09-28T20:00:00,2026-09-28T00:00:00,Tarde,0.8067,Sobreesfuerzo,Sobreesfuerzo (14 453 Nm·min),Reducir carga o cambiar herramienta
+1335,M01,2026-09-29T01:00:00,2026-09-28T00:00:00,Noche,0.7733,Sobreesfuerzo,Sobreesfuerzo (11 097 Nm·min),Reducir carga o cambiar herramienta
+1335,M01,2026-09-29T01:00:00,2026-09-28T00:00:00,Noche,0.7733,Herramienta desgastada,Herramienta desgastada (226 min),Cambiar herramienta
+1336,M01,2026-09-29T01:30:00,2026-09-28T00:00:00,Noche,0.9833,Sobreesfuerzo,Sobreesfuerzo (12 266 Nm·min),Reducir carga o cambiar herramienta
+1336,M01,2026-09-29T01:30:00,2026-09-28T00:00:00,Noche,0.9833,Herramienta desgastada,Herramienta desgastada (228 min),Cambiar herramienta
+3351,M02,2026-09-29T10:30:00,2026-09-29T00:00:00,Mañana,0.88,Sobreesfuerzo,Sobreesfuerzo (11 456 Nm·min),Reducir carga o cambiar herramienta
+5395,M03,2026-09-29T13:30:00,2026-09-29T00:00:00,Mañana,0.91,Potencia alta,Potencia alta (9 317 W),Revisar parámetros de corte
+5395,M03,2026-09-29T13:30:00,2026-09-29T00:00:00,Mañana,0.91,Sobreesfuerzo,Sobreesfuerzo (16 497 Nm·min),Reducir carga o cambiar herramienta
+5395,M03,2026-09-29T13:30:00,2026-09-29T00:00:00,Mañana,0.91,Herramienta desgastada,Herramienta desgastada (234 min),Cambiar herramienta
+3357,M02,2026-09-29T13:30:00,2026-09-29T00:00:00,Mañana,0.9067,Sobreesfuerzo,Sobreesfuerzo (11 271 Nm·min),Reducir carga o cambiar herramienta
+5400,M03,2026-09-29T16:00:00,2026-09-29T00:00:00,Tarde,0.61,Sobreesfuerzo,Sobreesfuerzo (13 235 Nm·min),Reducir carga o cambiar herramienta
+5400,M03,2026-09-29T16:00:00,2026-09-29T00:00:00,Tarde,0.61,Herramienta desgastada,Herramienta desgastada (246 min),Cambiar herramienta
+3370,M02,2026-09-29T20:00:00,2026-09-29T00:00:00,Tarde,0.9867,Potencia baja,Potencia baja (2 312 W),Revisar parámetros de corte
+9415,M05,2026-09-30T02:30:00,2026-09-29T00:00:00,Noche,0.91,Sobreesfuerzo,Sobreesfuerzo (11 157 Nm·min),Reducir carga o cambiar herramienta
+9415,M05,2026-09-30T02:30:00,2026-09-29T00:00:00,Noche,0.91,Herramienta desgastada,Herramienta desgastada (207 min),Cambiar herramienta
+1392,M01,2026-09-30T05:30:00,2026-09-29T00:00:00,Noche,0.9933,Potencia baja,Potencia baja (2 522 W),Revisar parámetros de corte
+1420,M01,2026-09-30T19:30:00,2026-09-30T00:00:00,Tarde,0.9367,Sobreesfuerzo,Sobreesfuerzo (11 300 Nm·min),Reducir carga o cambiar herramienta
+1420,M01,2026-09-30T19:30:00,2026-09-30T00:00:00,Tarde,0.9367,Herramienta desgastada,Herramienta desgastada (212 min),Cambiar herramienta
+5489,M03,2026-10-01T12:30:00,2026-10-01T00:00:00,Mañana,0.78,Sobreesfuerzo,Sobreesfuerzo (11 097 Nm·min),Reducir carga o cambiar herramienta
+5489,M03,2026-10-01T12:30:00,2026-10-01T00:00:00,Mañana,0.78,Herramienta desgastada,Herramienta desgastada (213 min),Cambiar herramienta
+5491,M03,2026-10-01T13:30:00,2026-10-01T00:00:00,Mañana,0.8267,Potencia alta,Potencia alta (9 239 W),Revisar parámetros de corte
+3458,M02,2026-10-01T16:00:00,2026-10-01T00:00:00,Tarde,0.9767,Potencia baja,Potencia baja (3 316 W),Revisar parámetros de corte
+9494,M05,2026-10-01T18:00:00,2026-10-01T00:00:00,Tarde,0.93,Sobreesfuerzo,Sobreesfuerzo (12 022 Nm·min),Reducir carga o cambiar herramienta
+9494,M05,2026-10-01T18:00:00,2026-10-01T00:00:00,Tarde,0.93,Herramienta desgastada,Herramienta desgastada (217 min),Cambiar herramienta
+1497,M01,2026-10-02T10:00:00,2026-10-02T00:00:00,Mañana,0.9933,Potencia alta,Potencia alta (9 215 W),Revisar parámetros de corte
+1497,M01,2026-10-02T10:00:00,2026-10-02T00:00:00,Mañana,0.9933,Sobreesfuerzo,Sobreesfuerzo (13 117 Nm·min),Reducir carga o cambiar herramienta
+7510,M04,2026-10-02T16:30:00,2026-10-02T00:00:00,Tarde,0.9567,Sobreesfuerzo,Sobreesfuerzo (12 741 Nm·min),Reducir carga o cambiar herramienta
+7510,M04,2026-10-02T16:30:00,2026-10-02T00:00:00,Tarde,0.9567,Herramienta desgastada,Herramienta desgastada (212 min),Cambiar herramienta
+3529,M02,2026-10-03T03:30:00,2026-10-02T00:00:00,Noche,0.9033,Sobreesfuerzo,Sobreesfuerzo (11 257 Nm·min),Reducir carga o cambiar herramienta
+3529,M02,2026-10-03T03:30:00,2026-10-02T00:00:00,Noche,0.9033,Herramienta desgastada,Herramienta desgastada (212 min),Cambiar herramienta
+7537,M04,2026-10-03T06:00:00,2026-10-03T00:00:00,Mañana,0.9933,Potencia baja,Potencia baja (3 376 W),Revisar parámetros de corte
+7565,M04,2026-10-03T20:00:00,2026-10-03T00:00:00,Tarde,0.8267,Potencia alta,Potencia alta (9 429 W),Revisar parámetros de corte
+7570,M04,2026-10-03T22:30:00,2026-10-03T00:00:00,Noche,0.82,Potencia alta,Potencia alta (9 436 W),Revisar parámetros de corte
+5616,M03,2026-10-04T04:00:00,2026-10-03T00:00:00,Noche,0.8433,Potencia alta,Potencia alta (9 385 W),Revisar parámetros de corte
+5618,M03,2026-10-04T05:00:00,2026-10-03T00:00:00,Noche,0.7933,Potencia alta,Potencia alta (9 042 W),Revisar parámetros de corte
+3580,M02,2026-10-04T05:00:00,2026-10-03T00:00:00,Noche,0.94,Potencia baja,Potencia baja (3 302 W),Revisar parámetros de corte
+1584,M01,2026-10-04T05:30:00,2026-10-03T00:00:00,Noche,0.9567,Sobreesfuerzo,Sobreesfuerzo (11 529 Nm·min),Reducir carga o cambiar herramienta
+9614,M05,2026-10-04T06:00:00,2026-10-04T00:00:00,Mañana,0.7467,Potencia alta,Potencia alta (9 012 W),Revisar parámetros de corte
+7592,M04,2026-10-04T09:30:00,2026-10-04T00:00:00,Mañana,0.64,Sobreesfuerzo,Sobreesfuerzo (12 383 Nm·min),Reducir carga o cambiar herramienta
+7592,M04,2026-10-04T09:30:00,2026-10-04T00:00:00,Mañana,0.64,Herramienta desgastada,Herramienta desgastada (202 min),Cambiar herramienta
+7594,M04,2026-10-04T10:30:00,2026-10-04T00:00:00,Mañana,0.9833,Sobreesfuerzo,Sobreesfuerzo (14 040 Nm·min),Reducir carga o cambiar herramienta
+7594,M04,2026-10-04T10:30:00,2026-10-04T00:00:00,Mañana,0.9833,Herramienta desgastada,Herramienta desgastada (208 min),Cambiar herramienta
+1596,M01,2026-10-04T11:30:00,2026-10-04T00:00:00,Mañana,0.94,Sobreesfuerzo,Sobreesfuerzo (11 532 Nm·min),Reducir carga o cambiar herramienta
+1596,M01,2026-10-04T11:30:00,2026-10-04T00:00:00,Mañana,0.94,Herramienta desgastada,Herramienta desgastada (218 min),Cambiar herramienta
+9654,M05,2026-10-05T02:00:00,2026-10-04T00:00:00,Noche,0.8567,Sobreesfuerzo,Sobreesfuerzo (11 196 Nm·min),Reducir carga o cambiar herramienta
+9654,M05,2026-10-05T02:00:00,2026-10-04T00:00:00,Noche,0.8567,Herramienta desgastada,Herramienta desgastada (201 min),Cambiar herramienta
+9655,M05,2026-10-05T02:30:00,2026-10-04T00:00:00,Noche,0.9533,Sobreesfuerzo,Sobreesfuerzo (11 429 Nm·min),Reducir carga o cambiar herramienta
+9655,M05,2026-10-05T02:30:00,2026-10-04T00:00:00,Noche,0.9533,Herramienta desgastada,Herramienta desgastada (203 min),Cambiar herramienta
+9660,M05,2026-10-05T05:00:00,2026-10-04T00:00:00,Noche,0.99,Sobreesfuerzo,Sobreesfuerzo (13 370 Nm·min),Reducir carga o cambiar herramienta
+9660,M05,2026-10-05T05:00:00,2026-10-04T00:00:00,Noche,0.99,Herramienta desgastada,Herramienta desgastada (216 min),Cambiar herramienta
+9664,M05,2026-10-05T07:00:00,2026-10-05T00:00:00,Mañana,0.7167,Sobreesfuerzo,Sobreesfuerzo (11 175 Nm·min),Reducir carga o cambiar herramienta
+9664,M05,2026-10-05T07:00:00,2026-10-05T00:00:00,Mañana,0.7167,Herramienta desgastada,Herramienta desgastada (229 min),Cambiar herramienta
+9665,M05,2026-10-05T07:30:00,2026-10-05T00:00:00,Mañana,0.9533,Sobreesfuerzo,Sobreesfuerzo (12 659 Nm·min),Reducir carga o cambiar herramienta
+9665,M05,2026-10-05T07:30:00,2026-10-05T00:00:00,Mañana,0.9533,Herramienta desgastada,Herramienta desgastada (231 min),Cambiar herramienta
+9668,M05,2026-10-05T09:00:00,2026-10-05T00:00:00,Mañana,0.8333,Sobreesfuerzo,Sobreesfuerzo (11 638 Nm·min),Reducir carga o cambiar herramienta
+9668,M05,2026-10-05T09:00:00,2026-10-05T00:00:00,Mañana,0.8333,Herramienta desgastada,Herramienta desgastada (238 min),Cambiar herramienta
+7670,M04,2026-10-06T00:30:00,2026-10-05T00:00:00,Noche,0.8267,Sobreesfuerzo,Sobreesfuerzo (11 038 Nm·min),Reducir carga o cambiar herramienta
+5707,M03,2026-10-06T01:30:00,2026-10-05T00:00:00,Noche,0.8367,Potencia alta,Potencia alta (9 456 W),Revisar parámetros de corte
+3685,M02,2026-10-06T09:30:00,2026-10-06T00:00:00,Mañana,0.85,Sobreesfuerzo,Sobreesfuerzo (11 885 Nm·min),Reducir carga o cambiar herramienta
+5735,M03,2026-10-06T15:30:00,2026-10-06T00:00:00,Tarde,0.8933,Sobreesfuerzo,Sobreesfuerzo (11 690 Nm·min),Reducir carga o cambiar herramienta
+5735,M03,2026-10-06T15:30:00,2026-10-06T00:00:00,Tarde,0.8933,Herramienta desgastada,Herramienta desgastada (208 min),Cambiar herramienta
+9765,M05,2026-10-07T09:30:00,2026-10-07T00:00:00,Mañana,0.8633,Potencia alta,Potencia alta (9 038 W),Revisar parámetros de corte
+7757,M04,2026-10-07T20:00:00,2026-10-07T00:00:00,Tarde,0.82,Sobreesfuerzo,Sobreesfuerzo (11 059 Nm·min),Reducir carga o cambiar herramienta
+7760,M04,2026-10-07T21:30:00,2026-10-07T00:00:00,Tarde,0.8267,Sobreesfuerzo,Sobreesfuerzo (11 722 Nm·min),Reducir carga o cambiar herramienta
+3761,M02,2026-10-07T23:30:00,2026-10-07T00:00:00,Noche,0.75,Combinación de variables fuera de lo normal,Combinación de variables fuera de lo normal,Inspección general de la máquina
+7764,M04,2026-10-07T23:30:00,2026-10-07T00:00:00,Noche,0.6967,Potencia alta,Potencia alta (9 626 W),Revisar parámetros de corte
+3765,M02,2026-10-08T01:30:00,2026-10-07T00:00:00,Noche,0.6067,Combinación de variables fuera de lo normal,Combinación de variables fuera de lo normal,Inspección general de la máquina
+1785,M01,2026-10-08T10:00:00,2026-10-08T00:00:00,Mañana,0.9767,Potencia baja,Potencia baja (1 148 W),Revisar parámetros de corte
+1790,M01,2026-10-08T12:30:00,2026-10-08T00:00:00,Mañana,0.9367,Potencia alta,Potencia alta (9 254 W),Revisar parámetros de corte
+3788,M02,2026-10-08T13:00:00,2026-10-08T00:00:00,Mañana,0.9267,Diferencia de temperatura baja,Diferencia de temperatura baja (8.5 °C),Revisar refrigeración/ventilación
+9823,M05,2026-10-08T14:30:00,2026-10-08T00:00:00,Tarde,0.95,Sobreesfuerzo,Sobreesfuerzo (11 388 Nm·min),Reducir carga o cambiar herramienta
+3794,M02,2026-10-08T16:00:00,2026-10-08T00:00:00,Tarde,0.7933,Combinación de variables fuera de lo normal,Combinación de variables fuera de lo normal,Inspección general de la máquina
+3795,M02,2026-10-08T16:30:00,2026-10-08T00:00:00,Tarde,0.96,Combinación de variables fuera de lo normal,Combinación de variables fuera de lo normal,Inspección general de la máquina
+9831,M05,2026-10-08T18:30:00,2026-10-08T00:00:00,Tarde,0.9633,Sobreesfuerzo,Sobreesfuerzo (11 557 Nm·min),Reducir carga o cambiar herramienta
+9831,M05,2026-10-08T18:30:00,2026-10-08T00:00:00,Tarde,0.9633,Herramienta desgastada,Herramienta desgastada (206 min),Cambiar herramienta
+1809,M01,2026-10-08T22:00:00,2026-10-08T00:00:00,Noche,0.9867,Potencia baja,Potencia baja (3 441 W),Revisar parámetros de corte
+3810,M02,2026-10-09T00:00:00,2026-10-08T00:00:00,Noche,0.8333,Combinación de variables fuera de lo normal,Combinación de variables fuera de lo normal,Inspección general de la máquina
+3815,M02,2026-10-09T02:30:00,2026-10-08T00:00:00,Noche,0.91,Diferencia de temperatura baja,Diferencia de temperatura baja (8.5 °C),Revisar refrigeración/ventilación
+3830,M02,2026-10-09T10:00:00,2026-10-09T00:00:00,Mañana,0.8067,Combinación de variables fuera de lo normal,Combinación de variables fuera de lo normal,Inspección general de la máquina
+1834,M01,2026-10-09T10:30:00,2026-10-09T00:00:00,Mañana,0.62,Sobreesfuerzo,Sobreesfuerzo (11 346 Nm·min),Reducir carga o cambiar herramienta
+3855,M02,2026-10-09T22:30:00,2026-10-09T00:00:00,Noche,0.9,Potencia alta,Potencia alta (9 472 W),Revisar parámetros de corte
+3855,M02,2026-10-09T22:30:00,2026-10-09T00:00:00,Noche,0.9,Sobreesfuerzo,Sobreesfuerzo (13 114 Nm·min),Reducir carga o cambiar herramienta
+3868,M02,2026-10-10T05:00:00,2026-10-09T00:00:00,Noche,0.9633,Potencia baja,Potencia baja (2 752 W),Revisar parámetros de corte
+5910,M03,2026-10-10T07:00:00,2026-10-10T00:00:00,Mañana,0.7667,Potencia alta,Potencia alta (9 327 W),Revisar parámetros de corte
+5910,M03,2026-10-10T07:00:00,2026-10-10T00:00:00,Mañana,0.7667,Sobreesfuerzo,Sobreesfuerzo (13 582 Nm·min),Reducir carga o cambiar herramienta
+5910,M03,2026-10-10T07:00:00,2026-10-10T00:00:00,Mañana,0.7667,Herramienta desgastada,Herramienta desgastada (208 min),Cambiar herramienta
+7927,M04,2026-10-11T09:00:00,2026-10-11T00:00:00,Mañana,0.8533,Sobreesfuerzo,Sobreesfuerzo (11 077 Nm·min),Reducir carga o cambiar herramienta
+3929,M02,2026-10-11T11:30:00,2026-10-11T00:00:00,Mañana,0.8033,Potencia alta,Potencia alta (9 030 W),Revisar parámetros de corte
+3936,M02,2026-10-11T15:00:00,2026-10-11T00:00:00,Tarde,0.74,Sobreesfuerzo,Sobreesfuerzo (12 753 Nm·min),Reducir carga o cambiar herramienta
+9975,M05,2026-10-11T18:30:00,2026-10-11T00:00:00,Tarde,0.9533,Potencia alta,Potencia alta (9 720 W),Revisar parámetros de corte
+9975,M05,2026-10-11T18:30:00,2026-10-11T00:00:00,Tarde,0.9533,Sobreesfuerzo,Sobreesfuerzo (11 730 Nm·min),Reducir carga o cambiar herramienta
+3944,M02,2026-10-11T19:00:00,2026-10-11T00:00:00,Tarde,0.9833,Potencia alta,Potencia alta (9 311 W),Revisar parámetros de corte
+3944,M02,2026-10-11T19:00:00,2026-10-11T00:00:00,Tarde,0.9833,Sobreesfuerzo,Sobreesfuerzo (13 674 Nm·min),Reducir carga o cambiar herramienta
+3944,M02,2026-10-11T19:00:00,2026-10-11T00:00:00,Tarde,0.9833,Herramienta desgastada,Herramienta desgastada (205 min),Cambiar herramienta
+7998,M04,2026-10-12T20:30:00,2026-10-12T00:00:00,Tarde,0.9833,Potencia baja,Potencia baja (2 753 W),Revisar parámetros de corte
+4003,M02,2026-10-13T00:30:00,2026-10-12T00:00:00,Noche,0.6767,Potencia alta,Potencia alta (9 014 W),Revisar parámetros de corte
+8027,M04,2026-10-13T11:00:00,2026-10-13T00:00:00,Mañana,0.63,Sobreesfuerzo,Sobreesfuerzo (11 144 Nm·min),Reducir carga o cambiar herramienta
+8027,M04,2026-10-13T11:00:00,2026-10-13T00:00:00,Mañana,0.63,Herramienta desgastada,Herramienta desgastada (222 min),Cambiar herramienta
+4025,M02,2026-10-13T11:30:00,2026-10-13T00:00:00,Mañana,0.8233,Sobreesfuerzo,Sobreesfuerzo (12 482 Nm·min),Reducir carga o cambiar herramienta
+4025,M02,2026-10-13T11:30:00,2026-10-13T00:00:00,Mañana,0.8233,Herramienta desgastada,Herramienta desgastada (207 min),Cambiar herramienta
+4033,M02,2026-10-13T15:30:00,2026-10-13T00:00:00,Tarde,0.6867,Sobreesfuerzo,Sobreesfuerzo (11 619 Nm·min),Reducir carga o cambiar herramienta
+4033,M02,2026-10-13T15:30:00,2026-10-13T00:00:00,Tarde,0.6867,Herramienta desgastada,Herramienta desgastada (231 min),Cambiar herramienta
