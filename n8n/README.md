@@ -3,7 +3,7 @@
 Este flujo envía por **Gmail** un correo por cada turno de la planta que tenga ciclos en **riesgo Alto** de falla.
 
 ```
-⏰ Cada minuto → 📄 Leer CSV de alertas → 📊 Extraer filas → 🔎 Elegir siguiente turno → 📧 Enviar correo (Gmail) → 📝 Registrar envío
+Cada minuto - Leer CSV de alertas - Extraer filas - Elegir siguiente turno - Enviar correo (Gmail) - Registrar envío
 ```
 
 - Lee `data/processed/alertas_por_turno.csv` (lo genera `notebooks/04_alertas.ipynb`).
@@ -82,7 +82,7 @@ Tus correos **no van en el código**, van en un archivo `.env` que **nunca se su
 
 ## Paso 4 · Crear la credencial de Gmail (SMTP) en n8n
 
-1. En n8n: **Overview → Create → Credential** (o el botón **+** → *Credential*).
+1. En n8n: botón **＋** de la barra lateral izquierda (arriba) → **Credential**.
 2. Busca y elige **SMTP**.
 3. Llena los campos:
 
@@ -102,18 +102,23 @@ Tus correos **no van en el código**, van en un archivo `.env` que **nunca se su
 
 ## Paso 5 · Importar el flujo
 
-1. En n8n: **Create → Workflow**.
+1. En n8n: botón **＋** de la barra lateral izquierda → **Workflow**.
 2. En el menú **⋯** (arriba a la derecha) → **Import from File…** → elige `n8n/alertas_por_turno.json` de este proyecto.
 3. Abre el nodo **Enviar correo (Gmail)** y en **Credential to connect with** elige la credencial SMTP del Paso 4.
-4. Guarda el flujo (**Save**).
+4. No hay botón *Save*: n8n **guarda el flujo automáticamente** (si quieres asegurarte, presiona **Ctrl + S**).
+
+> En los campos *From Email* y *To Email* aparece en rojo `[ERROR: not accessible via UI, please run node]`.
+> **Es normal**: por seguridad n8n no muestra en pantalla los valores de `.env`, pero sí los usa al ejecutar.
 
 ---
 
 ## Paso 6 · Probar
 
-1. Presiona **Execute workflow**.
-2. Debe llegar **un correo** a `CORREO_DESTINO`: *⚠️ 1 alerta de riesgo ALTO · Turno Mañana · 2026-09-01*.
-3. Cada nodo muestra un ✔ verde y cuántos elementos pasaron por él.
+1. Presiona **Execute** (abajo al centro del lienzo).
+2. Debe llegar **un correo** a `CORREO_DESTINO`: *⚠️ 1 alerta de riesgo ALTO · Turno Mañana · 2026-09-01*
+   (si no está en la bandeja de entrada, revisa *Spam*).
+3. Cada nodo muestra un ✔ verde y cuántos elementos pasaron por él:
+   `Extraer filas` → **108 items** (todos los turnos) y `Elegir siguiente turno` → **1 item** (el que se envía).
 
 > En las **pruebas manuales** n8n no guarda la memoria de lo enviado, así que cada prueba manda **el mismo primer correo**. Es normal.
 
@@ -121,7 +126,8 @@ Tus correos **no van en el código**, van en un archivo `.env` que **nunca se su
 
 ## Paso 7 · Activar (la demostración "en vivo")
 
-1. Activa el flujo con el interruptor **Active** (en versiones nuevas el botón se llama **Publish**).
+1. Presiona **Publish** (arriba a la derecha). En n8n 2.x, publicar es lo que **activa** el flujo.
+   n8n pide un nombre de versión, por ejemplo `Demo alertas por turno`, y presiona **Publish**.
 2. Desde ese momento, **cada minuto llega el correo del siguiente turno**.
 3. Al llegar al límite (5 por defecto) el flujo sigue corriendo, pero ya no manda nada.
 
@@ -141,9 +147,9 @@ Para cambiarlo: edita `.env`, guarda y reinicia n8n para que lea el nuevo valor:
 docker compose up -d --force-recreate
 ```
 
-Tus flujos y credenciales no se pierden. Si ya se enviaron 5 y cambias a `0`, **continúa desde el turno 6**.
+Si ya se enviaron 5 y cambias a `0`, **continúa desde el turno 6**.
 
-**Para detenerlo:** desactiva el flujo (o despublícalo). Para apagar n8n por completo:
+**Para detenerlo:** despublica el flujo (flecha **▾** junto a *Publish*). Para apagar n8n por completo:
 
 ```powershell
 docker compose down
@@ -155,21 +161,3 @@ Tus credenciales y flujos **no se pierden**: quedan en el volumen `n8n_datos` y 
 
 ---
 
-## Si cambias el flujo en n8n
-
-Para guardar los cambios en el repositorio: menú **⋯ → Download** y reemplaza `n8n/alertas_por_turno.json`.
-Antes de hacer commit, revisa que el archivo **no tenga correos ni contraseñas** escritos
-(los correos se leen de `.env` con `{{ $env.CORREO_DESTINO }}`; la credencial solo se exporta con su nombre, nunca con la contraseña).
-
----
-
-## Problemas comunes
-
-| Error | Causa probable | Solución |
-|---|---|---|
-| *No such file or directory* en **Leer CSV de alertas** | No existe el CSV | Ejecuta `notebooks/04_alertas.ipynb` |
-| *Access to the file is not allowed* | n8n solo puede leer `/data` | Revisa que la ruta sea `/data/processed/alertas_por_turno.csv` |
-| *Username and Password not accepted* | Se usó la contraseña normal de Gmail | Usa la **contraseña de aplicación** del Paso 1 |
-| El correo no tiene destinatario / error con `$env` | Falta `.env` o se editó con n8n encendido | Revisa `.env` y ejecuta `docker compose up -d --force-recreate` |
-| *Cannot connect to the Docker daemon* | Docker Desktop está cerrado | Ábrelo y espera a *Engine running* |
-| El puerto 5678 está ocupado | Otro programa usa ese puerto | Cambia `"5678:5678"` por `"5679:5678"` en `docker-compose.yml` y abre `http://localhost:5679` |
